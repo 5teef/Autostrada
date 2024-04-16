@@ -104,47 +104,68 @@ nav a:hover {
 
 .homecontainer .homepartner h2 {
   font-family: Lato;
-  font-size: 1.75vw;
+  font-size: 1.75em;
   font-weight: 400;
 }
 
 .homecontainer .homepartner p {
   font-family: Lato;
-  font-size: 1.25vw;
+  font-size: 1em;
 }
 
 .car-section {
   margin-bottom: 20px;
   /* lägg till lite mellanrum mellan varje bilsektion */
+  font-family: Lato;
 }
+
 
 .car-section img {
   width: 100%;
   /* Säkerställ att bilden fyller sin föräldersektion fullständigt */
   border-radius: 10px;
   /* Avrunda hörnen på bilden */
+  margin-top: 10%;
 }
 
 .car {
-  margin-top: 10px;
+  margin-top: 15px;
   /* Lägg till lite mellanrum mellan bilden och texten */
 }
 
 .car h2 {
-  font-size: 1.5em;
+  font-size: 1em;
+  color: white;
   /* Ställ in storleken på rubriken */
 }
 
 .cartext {
-  font-size: 1em;
+  font-size: 0.9em;
   /* Ställ in storleken på beskrivningstexten */
-  color: #333;
+  color: white;
   /* Ställ in textfärgen */
 }
 
 .car-info {
+  display: flex;;
+  flex-wrap: wrap;
+  justify-content: space-between;
   margin-top: 10px;
-  /* Lägg till lite mellanrum mellan texten och linjeseparatorn */
+}
+
+.car-info p {
+  font-size: 0.9em;
+  color: black;
+  padding: 5px;
+  background-color: white;
+  border-radius: 5px;
+  font-weight: 600;
+  box-shadow: 2px 2px 2px green;
+}
+
+.car-info p:hover {
+    box-shadow: 3px 3px rgba(255, 0, 0, 0.5),
+        0px 0px 3px 4px rgba(0, 128, 0, 0.5);
 }
 
 .line-separator-car img {
@@ -193,7 +214,7 @@ nav a:hover {
 
 .trademark {
   font-family: Lato;
-  font-size: 1.25vw;
+  font-size: 1.2em;
   color: white;
   text-align: center;
 }
@@ -234,267 +255,19 @@ nav a:hover {
 
   .homecontainer .homepartner h2 {
     font-family: Lato;
-    font-size: 2.0vw;
+    font-size: 4.0vw;
     font-weight: 400;
   }
 
   .homecontainer .homepartner p {
     font-family: Lato;
-    font-size: 1.5vw;
+    font-size: 3vw;
   }
 
   .homecontainer .lineseperator img {
-    width: 50%;
+    width: 80%;
   }
 
 
   
 }
-
-@media screen and (max-width: 768px) {
-  .car-info p {
-    font-size: 14px;
-    /* Justera textstorleken för mindre skärmar */
-  }
-}
-
-
-
-
-
-
-
-
-/*@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
-@font-face {
-  font-family: 'Sawah';
-  src: url('../public/fonts/Sawah.otf') format('opentype');
-}
-
-
-* {
-  box-sizing: border-box;
-}
-
-body{
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  background-color: black;
-}
-
-h1 {
-  color: white;
-}
-
-.header {
-  display: flex;
-  justify-content: center;
-  justify-content: space-between;
-}
-
-.header svg {
-  font-size: 2.5vw;
-  vertical-align: middle;
-}
-
-.header a {
-  color:white;
-  text-align: center;
-  font-family: lato;
-  white-space: nowrap;
-  margin: 15px;
-  font-size: 1.2vw;
-  width: 90%;
-}
-
-.line {
-  margin: 1rem 0;
-  color: inherit;
-  border: 0;
-  opacity: .25;
-}
-
-.logo {
-  text-align: center;
-}
-
-.logo img{
-  width: 35%;
-}
-
-nav {
-  display: flex;
-  justify-content: center;
-  justify-content: space-evenly;
-}
-
-nav a {
-  font-family: Sawah;
-  padding-bottom: 1%;
-  font-size: 0.6vw;
-  color: rgba(255, 255, 255, .5);
-  letter-spacing: 10px;
-  display: inline-block;
-  white-space: nowrap;
-}
-
-nav a:hover {
-  color: white;
-  transition: 1s;
-}
-
-.homecontainer {
-  display: flex;
-  flex-direction: row-reverse;
-  width: 100%;
-}
-
-.homecontainer .twovolvo {
-  text-align: right;
-
-}
-
-.homecontainer .twovolvo img {
-  width: 100%;
-
-}
-
-.homecontainer .lineseperator img {
-  width: 60%;
-}
-
-.homecontainer .homepartner {
-  color: white;
-  width: 80%;
-  margin: 1%;
-}
-
-.homecontainer .homepartner h2 {
-  font-family: Lato;
-  font-size: 1.75vw;
-  font-weight: 400;
-}
-
-.homecontainer .homepartner p {
-  font-family: Lato;
-  font-size: 1.25vw;
-}
-
-.careight-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  margin: 3% auto;
-
-}
-
-.careight-container a {
-  color: white;
-  font-family: lato;
-}
-
-.car-section {
-  width: 33;
-  margin-bottom: 20px;
-
-}
-
-.careight-container section img {
-  height: 300px;
-  border-radius: 5px;
-}
-
-.line-seperator-car img {
-  text-align: center;
-  max-height: 2px;
-
-}
-
-.car {
-  width: 60%;
-}
-
-.car-info {
-  display: flex;
-  justify-content: space-between;
-  width: 40%;
-}
-
-.car-info p {
-  background-color: white;
-  color: black;
-  font-weight: 500;
-  padding: 5px;
-  font-family: Lato;
-  border-radius: 8px;
-  white-space: nowrap;
-  margin-right: 10px;
-}
-
-
-
-.footer {
-  display: flex;
-  padding-left: 20px;
-  padding-right: 20px;
-  width: 100%;
-  justify-content: space-evenly;
-  font-size: 1.25vw;
-}
-
-.footer-autostrada-uc {
-  width: 20%;
-  text-align: center;
-}
-
-.footer-autostrada-uc .logo img {
-  width: 100%;
-  display: block;
-}
-
-.footer-autostrada-uc .uc img {
-  width: 20%;  
-}
-
-.footer-autostrada-uc p {
-  color: white;
-  font-family: Lato;
-}
-
-.trademark {
-  font-family: Lato;
-  font-size: 1.25vw;
-  color: white;
-  text-align: center;
-}
-
-.nopage {
-  text-align: center;
-}
-
-@media screen and (max-width: 1200px) {
-  .header a {
-    color: white;
-    text-decoration: none;
-    font-family: lato;
-    white-space: nowrap;
-    font-size: 2vw;
-  }
-
-  nav {
-    display: block;
-    text-align: center;
-  }
-
-  nav a {
-    display: block;
-    padding: 10px;
-    font-family: Sawah;
-    font-size: 1vw;
-    color: rgba(255, 255, 255, .5);
-    letter-spacing: 5px;
-  }
-
-}
-*/

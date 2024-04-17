@@ -59,16 +59,22 @@ nav {
   display: flex;
   justify-content: center;
   justify-content: space-evenly;
+  margin-top: 20px;
 }
 
 nav a {
   font-family: Sawah;
   padding-bottom: 1%;
-  font-size: 0.6vw;
+  font-size: 0.8vw;
   color: rgba(255, 255, 255, .5);
-  letter-spacing: 10px;
+  letter-spacing: 5px;
   display: inline-block;
   white-space: nowrap;
+}
+
+nav a::first-letter {
+  color: green;
+  font-size: 1.2vw;
 }
 
 nav a:hover {
@@ -113,73 +119,48 @@ nav a:hover {
   font-size: 1em;
 }
 
-.car-section {
-  margin-bottom: 20px;
-  /* lägg till lite mellanrum mellan varje bilsektion */
-  font-family: Lato;
-}
-
 
 .car-section img {
-  width: 100%;
-  /* Säkerställ att bilden fyller sin föräldersektion fullständigt */
   border-radius: 10px;
-  /* Avrunda hörnen på bilden */
-  margin-top: 10%;
-}
-
-.car {
-  margin-top: 15px;
-  /* Lägg till lite mellanrum mellan bilden och texten */
+  margin-top: 20px;
 }
 
 .car h2 {
   font-size: 1em;
   color: white;
-  /* Ställ in storleken på rubriken */
+  margin-top: 20px;
 }
 
 .cartext {
   font-size: 0.9em;
-  /* Ställ in storleken på beskrivningstexten */
   color: white;
-  /* Ställ in textfärgen */
+  margin-top: 20px;
 }
 
 .car-info {
-  display: flex;;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  margin-top: 10px;
+  color:white;
+  margin-top: 20px;
 }
 
 .car-info p {
-  font-size: 0.9em;
-  color: black;
-  padding: 5px;
-  background-color: white;
-  border-radius: 5px;
-  font-weight: 600;
-  box-shadow: 2px 2px 2px green;
+    font-size: 0.9em;
+      color: black;
+      padding: 5px;
+      background-color: white;
+      border-radius: 5px;
+      font-weight: 600;
+      box-shadow: 2px 2px 2px green;
 }
 
 .car-info p:hover {
-    box-shadow: 3px 3px rgba(255, 0, 0, 0.5),
-        0px 0px 3px 4px rgba(0, 128, 0, 0.5);
+  box-shadow: 3px 3px rgba(255, 0, 0, 0.5),
+    0px 0px 3px 4px rgba(0, 128, 0, 0.5);
 }
 
 .line-separator-car img {
   width: 100%;
-  /* Se till att linjeseparatorn fyller sin föräldersektion fullständigt */
+  margin-bottom: 60px;
 }
-
-
-
-
-
-
-
-
 
 
 
@@ -255,13 +236,13 @@ nav a:hover {
 
   .homecontainer .homepartner h2 {
     font-family: Lato;
-    font-size: 4.0vw;
+    font-size: 2em;
     font-weight: 400;
   }
 
   .homecontainer .homepartner p {
     font-family: Lato;
-    font-size: 3vw;
+    font-size: 1em;
   }
 
   .homecontainer .lineseperator img {

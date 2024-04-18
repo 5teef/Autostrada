@@ -1,0 +1,42 @@
+{
+  "/api/articles": {
+    "GET": {
+      "action": "db.articles"
+    },
+    "POST": {
+      "action": "db.articles.push(req.body)",
+      "path": "/api/articles"
+    }
+  },
+  "/api/articles/:id": {
+    "GET": {
+      "action": "db.articles.find(data => data.id == :id)"
+    },
+    "PUT": {
+      "action": "db.articles.find(data => data.id == :id).completed = true"
+    },
+    "DELETE": {
+      "action": "db.articles = db.articles.filter(data => data.id != :id)"
+    }
+  },
+  "/api/test": {
+    "GET": {
+      "action": "db.test"
+    },
+    "POST": {
+      "action": "db.test.push(req.body)",
+      "path": "/api/test"
+    }
+  },
+  "/api/test/:id": {
+    "GET": {
+      "action": "db.test.find(data => data.id == :id)"
+    },
+    "PUT": {
+      "action": "db.test.find(data => data.id == :id).completed = true"
+    },
+    "DELETE": {
+      "action": "db.test = db.test.filter(data => data.id != :id)"
+    }
+  }
+}

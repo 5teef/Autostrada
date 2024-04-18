@@ -2,7 +2,7 @@
   "name": "autostrada",
   "private": true,
   "version": "0.0.5",
-  "homepage": "https://5teef.github.io/Autostrada-Build/",
+  "homepage": "https://5teef.github.io/Autostrada/",
   "type": "module",
   "scripts": {
     "predeploy": "npm run build",

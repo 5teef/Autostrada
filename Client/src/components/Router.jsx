@@ -27,8 +27,8 @@ export default function Router() {
         <Nav />
         <Routes>
 
-          <Route path="/" element={<Home />} />
-          <Route path="fordon" element={<Fordon />} />
+          <Route path="Autostrada/" element={<Home />} />
+          <Route path="Autostrada/fordon" element={<Fordon />} />
           <Route path="*" element={<NoPage />} />
           
         </Routes>

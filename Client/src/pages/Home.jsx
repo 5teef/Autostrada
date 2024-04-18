@@ -8,6 +8,7 @@ import Items from "../components/Items.jsx"*/
 import Video from "../components/AutostradaVideo"
 import HomePartner from "../components/HomePartner"
 import CarsEight from "../components/HomeCarsSale8"
+import SeperatorRight from "../components/SeperatorSite_Right"
 
 export default function Home() {
 
@@ -21,6 +22,7 @@ export default function Home() {
       <Video />
       <HomePartner />
       <CarsEight />
+      <SeperatorRight />
     </div>
   )
 

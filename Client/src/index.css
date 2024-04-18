@@ -15,30 +15,32 @@ body{
   background-color: black;
 }
 
-h1 {
-  color: white;
-}
+
 
 .header {
   display: flex;
-  justify-content: center;
-  justify-content: space-between;
+  justify-content: space-evenly;
+  margin-top: 15px; 
+  text-align: center;
+  font-family: Lato;
 }
 
+
 .header svg {
-  font-size: 2.5vw;
+  font-size: 1.5rem;
   vertical-align: middle;
 }
 
 .header a {
   color:white;
-  text-align: center;
   font-family: Lato;
   white-space: nowrap;
-  margin: 15px;
-  font-size: 1.2vw;
-  width: 90%;
 }
+
+.header a:hover {
+  
+}
+
 
 .line {
   margin: 1rem 0;
@@ -49,6 +51,7 @@ h1 {
 
 .logo {
   text-align: center;
+  width: 100%;
 }
 
 .logo img{
@@ -56,16 +59,13 @@ h1 {
 }
 
 nav {
-  display: flex;
-  justify-content: center;
-  justify-content: space-evenly;
   margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: center;
 }
 
 nav a {
-  font-family: Sawah;
-  padding-bottom: 1%;
-  font-size: 0.8vw;
+  font-family: Sawah; 
   color: rgba(255, 255, 255, .5);
   letter-spacing: 5px;
   display: inline-block;
@@ -73,8 +73,7 @@ nav a {
 }
 
 nav a::first-letter {
-  color: green;
-  font-size: 1.2vw;
+  color: rgb(17, 222, 17);
 }
 
 nav a:hover {
@@ -83,40 +82,25 @@ nav a:hover {
 }
 
 .homecontainer {
-  display: flex;
-  flex-direction: row-reverse;
-  width: 100%;
+  margin: 0;
+  padding: 0;
 }
 
-.homecontainer .twovolvo {
-  text-align: right;
-
-}
-
-.homecontainer .twovolvo img {
-  width: 100%;
-
-}
-
-.homecontainer .lineseperator img {
-  width: 60%;
+.lineseperator-home img {
+  width: 90%;
 }
 
 .homecontainer .homepartner {
   color: white;
-  width: 80%;
-  margin: 1%;
 }
 
 .homecontainer .homepartner h2 {
   font-family: Lato;
-  font-size: 1.75em;
   font-weight: 400;
 }
 
 .homecontainer .homepartner p {
   font-family: Lato;
-  font-size: 1em;
 }
 
 
@@ -129,12 +113,12 @@ nav a:hover {
   font-size: 1em;
   color: white;
   margin-top: 20px;
+  font-weight: 600;
 }
 
 .cartext {
-  font-size: 0.9em;
   color: white;
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
 .car-info {
@@ -143,13 +127,13 @@ nav a:hover {
 }
 
 .car-info p {
-    font-size: 0.9em;
-      color: black;
-      padding: 5px;
-      background-color: white;
-      border-radius: 5px;
-      font-weight: 600;
-      box-shadow: 2px 2px 2px green;
+  font-size: 0.9em;
+  color: black;
+  padding: 5px;
+  background-color: white;
+  border-radius: 5px;
+  font-weight: 600;
+  box-shadow: 2px 2px 2px green;
 }
 
 .car-info p:hover {
@@ -162,40 +146,33 @@ nav a:hover {
   margin-bottom: 60px;
 }
 
-
-
-
-.footer {
-  display: flex;
-  padding-left: 20px;
-  padding-right: 20px;
-  width: 100%;
-  justify-content: space-evenly;
-  font-size: 1.25vw;
+.seperator-right {
+  text-align: right;
 }
 
-.footer-autostrada-uc {
-  width: 20%;
-  text-align: center;
+.seperator-right img {
+  width: 70%;
 }
 
-.footer-autostrada-uc .logo img {
-  width: 100%;
-  display: block;
-}
-
-.footer-autostrada-uc .uc img {
-  width: 20%;  
-}
 
 .footer-autostrada-uc p {
   color: white;
   font-family: Lato;
 }
 
+.footer-autostrada-uc .uc img {
+  width: 20%;
+}
+.footer-autostrada-uc .uc {
+  display: flex;
+  text-align: center;
+  justify-content: space-evenly;
+}
+
 .trademark {
+  margin-top: 20px;
   font-family: Lato;
-  font-size: 1.2em;
+  font-size: 1em;
   color: white;
   text-align: center;
 }
@@ -204,51 +181,80 @@ nav a:hover {
   text-align: center;
 }
 
-@media screen and (max-width: 1080px) {
-
-  .header a {
-    color: white;
-    text-decoration: none;
-    font-family: lato;
-    white-space: nowrap;
-    font-size: 2vw;
-    
+/* Extra small devices (phones, 576px and down) */
+@media (max-width: 575.98px) {
+  /* Din CSS för extra små skärmar XS */
+.nav {
+    font-size: 0.55rem;
   }
 
-  nav {
-    display: block;
-    text-align: center;
+.nav a {
+  margin-bottom: 15px;
+}
 
-  }
-  nav a {
-    display: block;
-    padding: 10px;
-    font-family: Sawah;
-    font-size: 1vw;
-    color: rgba(255, 255, 255, .5);
-    letter-spacing: 5px;
-  }
+.header a {
+  font-size: 1.2rem;
+  margin-bottom: 200px;
+}
 
-  .homecontainer .twovolvo {
-    width: 80%;
+}
 
-  }
-
-  .homecontainer .homepartner h2 {
-    font-family: Lato;
-    font-size: 2em;
-    font-weight: 400;
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  /* Din CSS för små skärmar SM */
+.nav {
+    font-size: 0.7rem;
   }
 
-  .homecontainer .homepartner p {
-    font-family: Lato;
-    font-size: 1em;
+.nav a {
+  margin-bottom: 15px;
+}
+
+.header a {
+  font-size: 1.4rem;
+}
+
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  /* Din CSS för medelstora skärmar MD */
+.nav {
+    font-size: 0.75rem;
   }
 
-  .homecontainer .lineseperator img {
-    width: 80%;
+.nav a {
+  margin-bottom: 15px;
+}
+
+.header a {
+  font-size: 1.2rem;
+}
+
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  /* Din CSS för större skärmar än medelstora men mindre än extra stora LG */
+.nav {
+  font-size: 0.51rem;
+  justify-content: space-evenly;
+}
+
+.header a {
+  font-size: 1.5rem;
+}
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  /* Din CSS för extra stora skärmar XL */
+.nav {
+    font-size: 0.65rem;
+    justify-content: space-evenly;
   }
 
-
-  
+.header a {
+  font-size: 1.8rem;
+}
 }

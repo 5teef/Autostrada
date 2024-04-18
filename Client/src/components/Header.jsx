@@ -1,8 +1,9 @@
-import { Link } from "react-router-dom"
-import { FaRegClock } from "react-icons/fa6";
-import { FaInstagram } from "react-icons/fa6";
+import { Link } from "react-router-dom";
+import { FaRegClock } from "react-icons/fa";
+import { FaInstagram } from "react-icons/fa";
 import { MdMailOutline } from "react-icons/md";
 import { CiPhone } from "react-icons/ci";
+import { Container, Row, Col } from 'react-bootstrap';
 
 export default function Header() {
 
@@ -26,20 +27,26 @@ export default function Header() {
         return "Öppet vid tidsbokningar!";
     }
   };
-  
 
   return (
     <div>
-    <div className="header">
-      <Link to="/" style={{ textDecoration: 'none' }}> <FaRegClock /> {oppetider()}</Link>
-      <Link to="https://www.instagram.com/autostrada.nu/" style={{ textDecoration: 'none' }}><FaInstagram /> autostrada.nu</Link>
-      <Link to="mailto:info@autostrada.nu" style={{ textDecoration: 'none' }}><MdMailOutline /> info@autostrada.nu</Link>
-        <Link to="#" style={{ textDecoration: 'none' }}> <CiPhone /> +4672 - 00 79 292</Link>
-    </div>
-
-    <div className="line">
-        <hr style={{ color: 'white', fontFamily: 'lato', fontSize: '3px', fontWeight: 200 }} />
-    </div>
+      <Container fluid>
+        <Row className="header justify-content-between">
+          <Col xs={6} md={2} lg={2}>
+            <Link to="/Autostrada" style={{ textDecoration: 'none' }}> <FaRegClock /> {oppetider()}</Link>
+          </Col>
+          <Col xs={6} md={3} lg={3}>
+            <Link to="https://www.instagram.com/autostrada.nu/" style={{ textDecoration: 'none' }}><FaInstagram /> autostrada.nu</Link>
+          </Col>
+          <Col xs={6} md={3} lg={3}>
+            <Link to="mailto:info@autostrada.nu" style={{ textDecoration: 'none' }}><MdMailOutline /> info@autostrada.nu</Link>
+          </Col>
+          <Col xs={6} md={3} lg={3}>
+            <Link to="tel:+4672-0079292" style={{ textDecoration: 'none' }}> <CiPhone /> +4672 - 00 79 292</Link>
+          </Col>
+        </Row>
+      </Container>
+      <hr style={{ color: 'white', fontFamily: 'lato', fontSize: '3px', fontWeight: 200 }} />
     </div>
   )
 }

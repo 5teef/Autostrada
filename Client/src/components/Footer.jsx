@@ -1,5 +1,6 @@
 import Autostrada from "./LogoAutostrada";
 import UClogo from "../../public/img/uc.png";
+import Bisnode from "../../public/img/bisnode.png";
 import { Container, Row, Col } from 'react-bootstrap';
 
 export default function Header() {
@@ -14,14 +15,14 @@ export default function Header() {
           <p>Autostrada erbjuder bilentusiaster allt från nya bilar till begagnade och service. Hitta din drömbil med hjälp av vårt erfarna team.</p>
           <div className="uc"> {/* Lägg till klasser för centrerad flex */}
             <img src={UClogo} alt="Logo" />
-            <img src={UClogo} alt="Logo" />
+            <img src={Bisnode} alt="Logo" />
           </div>
         </Col>
         <Col xs={6} lg={6} className="footer-autostrada-uc">
           <p>Autostrada erbjuder bilentusiaster allt från nya bilar till begagnade och service. Hitta din drömbil med hjälp av vårt erfarna team.</p>
           <div className="uc"> {/* Lägg till klasser för centrerad flex */}
             <img src={UClogo} alt="Logo" />
-            <img src={UClogo} alt="Logo" />
+            <img src={Bisnode} alt="Logo" />
           </div>
         </Col>
 

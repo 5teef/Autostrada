@@ -37,10 +37,6 @@ body{
   white-space: nowrap;
 }
 
-.header a:hover {
-  
-}
-
 
 .line {
   margin: 1rem 0;
@@ -84,6 +80,7 @@ nav a:hover {
 .homecontainer {
   margin: 0;
   padding: 0;
+  margin-bottom: 50px;
 }
 
 .lineseperator-home img {
@@ -143,7 +140,8 @@ nav a:hover {
 
 .line-separator-car img {
   width: 100%;
-  margin-bottom: 60px;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
 .seperator-right {
@@ -158,11 +156,13 @@ nav a:hover {
 .footer-autostrada-uc p {
   color: white;
   font-family: Lato;
+  text-align: center;
 }
 
 .footer-autostrada-uc .uc img {
   width: 20%;
 }
+
 .footer-autostrada-uc .uc {
   display: flex;
   text-align: center;
@@ -197,6 +197,14 @@ nav a:hover {
   margin-bottom: 200px;
 }
 
+.logo img {
+  width: 60%;
+}
+
+.footer-autostrada-uc .uc img {
+  width: 35%;
+}
+
 }
 
 /* Small devices (landscape phones, 576px and up) */
@@ -214,6 +222,14 @@ nav a:hover {
   font-size: 1.4rem;
 }
 
+.logo img {
+  width: 60%;
+}
+
+.footer-autostrada-uc .uc img {
+  width: 30%;
+} 
+
 }
 
 /* Medium devices (tablets, 768px and up) */
@@ -229,6 +245,10 @@ nav a:hover {
 
 .header a {
   font-size: 1.2rem;
+}
+
+.logo img {
+  width: 50%;
 }
 
 }

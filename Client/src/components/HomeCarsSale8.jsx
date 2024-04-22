@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { Container, Row, Col } from 'react-bootstrap';
 import Left from "/img/left.png";
+import Button from 'react-bootstrap/Button';
 
 export default function CarsEight() {
   const formatPrice = (price) => {
@@ -12,7 +13,7 @@ export default function CarsEight() {
       <Container>
         <Row className="careight-container">
           {/* Bil 1 */}
-          <Col xs={12} sm={6} md={4} className="car-section">
+          <Col xs={12} sm={6} md={6} lg={4} className="car-section">
             <Link to="/car/BMW-M550-d-xDrive-Touring-Ultimate-Edition-FULLUTRUSTAD" style={{ textDecoration: 'none' }}>
               <img src="/Autostrada/cars/BMW-550.jpg" alt="BMW M550-d xDrive Touring Ultimate Edition FULLUTRUSTAD" className="car-image img-fluid" />
               <div className="car">
@@ -43,7 +44,7 @@ export default function CarsEight() {
           </Col>
 
           {/* Bil 2 */}
-          <Col xs={12} sm={6} md={4} className="car-section">
+          <Col xs={12} sm={6} md={6} lg={4} className="car-section">
             <Link to="/car/BMW-M550-d-xDrive-Touring-Ultimate-Edition-FULLUTRUSTAD" style={{ textDecoration: 'none' }}>
               <img src="/Autostrada/cars/BMW-550.jpg" alt="BMW M550-d xDrive Touring Ultimate Edition FULLUTRUSTAD" className="car-image img-fluid" />
               <div className="car">
@@ -74,7 +75,7 @@ export default function CarsEight() {
           </Col>
 
           {/* Bil 3 */}
-          <Col xs={12} sm={6} md={4} className="car-section">
+          <Col xs={12} sm={6} md={6} lg={4} className="car-section">
             <Link to="/car/BMW-M550-d-xDrive-Touring-Ultimate-Edition-FULLUTRUSTAD" style={{ textDecoration: 'none' }}>
               <img src="/Autostrada/cars/BMW-550.jpg" alt="BMW M550-d xDrive Touring Ultimate Edition FULLUTRUSTAD" className="car-image img-fluid" />
               <div className="car">
@@ -105,7 +106,7 @@ export default function CarsEight() {
           </Col>
 
           {/* Bil 4 */}
-          <Col xs={12} sm={6} md={4} className="car-section">
+          <Col xs={12} sm={6} md={6} lg={4} className="car-section">
             <Link to="/car/BMW-M550-d-xDrive-Touring-Ultimate-Edition-FULLUTRUSTAD" style={{ textDecoration: 'none' }}>
               <img src="/Autostrada/cars/BMW-550.jpg" alt="BMW M550-d xDrive Touring Ultimate Edition FULLUTRUSTAD" className="car-image img-fluid" />
               <div className="car">
@@ -136,7 +137,7 @@ export default function CarsEight() {
           </Col>
 
           {/* Bil 5 */}
-          <Col xs={12} sm={6} md={4} className="car-section">
+          <Col xs={12} sm={6} md={6} lg={4} className="car-section">
             <Link to="/car/BMW-M550-d-xDrive-Touring-Ultimate-Edition-FULLUTRUSTAD" style={{ textDecoration: 'none' }}>
               <img src="/Autostrada/cars/BMW-550.jpg" alt="BMW M550-d xDrive Touring Ultimate Edition FULLUTRUSTAD" className="car-image img-fluid" />
               <div className="car">
@@ -167,7 +168,7 @@ export default function CarsEight() {
           </Col>
 
           {/* Bil 6 */}
-          <Col xs={12} sm={6} md={4} className="car-section">
+          <Col xs={12} sm={6} md={6} lg={4} className="car-section">
             <Link to="/car/BMW-M550-d-xDrive-Touring-Ultimate-Edition-FULLUTRUSTAD" style={{ textDecoration: 'none' }}>
               <img src="/Autostrada/cars/BMW-550.jpg" alt="BMW M550-d xDrive Touring Ultimate Edition FULLUTRUSTAD" className="car-image img-fluid" />
               <div className="car">
@@ -192,12 +193,19 @@ export default function CarsEight() {
                 <div><p className="carbransle text-nowrap">Bensin</p></div>
               </Col>
             </Row>
+
+
             <div className="line-separator-car">
               <img src={Left} alt="line" />
             </div>
           </Col>
         </Row>
       </Container>
+        <Link to="/Autostrada/fordon">
+        <Button className="morecars" variant="secondary" size="sm">
+          Fler bilar!
+        </Button>
+        </Link>
     </>
   );
 }

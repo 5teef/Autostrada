@@ -179,6 +179,10 @@ nav a:hover {
 } 
 
 
+.seperator-left img {
+  width: 70%;
+}
+
 .footer-autostrada-uc p {
   color: white;
   font-family: Lato;

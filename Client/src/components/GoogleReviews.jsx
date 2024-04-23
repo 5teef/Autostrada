@@ -18,7 +18,7 @@ const GoogleReview = () => {
   }, []);
 
   useEffect(() => {
-    // Vänta 5 sekunder innan vi väljer och tar bort länken
+    // Vänta 2 sekunder innan vi väljer och tar bort länken
     const timer = setTimeout(() => {
       const linksToRemove = document.querySelectorAll('.WidgetBackground__Content-sc-1ho7q3r-2.ciCnpO a');
       linksToRemove.forEach(link => {

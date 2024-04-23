@@ -136,33 +136,26 @@ nav a:hover {
     0px 0px 3px 4px rgba(0, 128, 0, 0.5);
 }
 
-.morecars {
-  color: white;
-  border-radius: 5px;
-  font-size: 17px;
-  font-family: Lato;
-  background-color: #009147;
-  display:block;
-  margin: 0 auto;
-  white-space: nowrap;
-  text-decoration: none !important;
+.morecars-div {
+  text-align: center;
   margin-top: 50px;
   margin-bottom: 50px;
 }
 
+.morecars {
+  color: white;
+  font-family: Lato;
+  background-color: #006832;
+  border: none;
+}
+
 .morecars a {
   color: white;
-  border-radius: 5px;
-  font-size: 17px;
-  font-family: Lato;
-  text-decoration: none !important;
 }
 
 .morecars:hover {
   color: white;
   background-color: #009147;
-  border-radius: 5px;
-  font-size: 17px;
 }
 
 

@@ -201,11 +201,13 @@ export default function CarsEight() {
           </Col>
         </Row>
       </Container>
+      <div className="morecars-div">
         <Link to="/Autostrada/fordon">
         <Button className="morecars" variant="secondary" size="lg" style={{ textDecoration: 'none' }}>
           Fler bilar!
         </Button>
         </Link>
+      </div>
     </>
   );
 }

@@ -202,7 +202,7 @@ export default function CarsEight() {
         </Row>
       </Container>
         <Link to="/Autostrada/fordon">
-        <Button className="morecars" variant="secondary" size="sm">
+        <Button className="morecars" variant="secondary" size="lg" style={{ textDecoration: 'none' }}>
           Fler bilar!
         </Button>
         </Link>

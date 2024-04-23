@@ -1,80 +1,79 @@
-  @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
-  @font-face {
-    font-family: 'Sawah';
-    src: url('../public/fonts/Sawah.otf') format('opentype');
-  }
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@font-face {
+  font-family: 'Sawah';
+  src: url('../public/fonts/Sawah.otf') format('opentype');
+}
 
-  * {
-    box-sizing: border-box;
-  }
+* {
+  box-sizing: border-box;
+}
 
-  body{
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    background-color: black;
-  }
+body{
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  background-color: black;
+}
 
-
-
-  .header {
-    display: flex;
-    margin-top: 15px; 
-    text-align: center;
-    font-family: Lato;
-  }
+.header {
+  display: flex;
+  margin-top: 15px; 
+  text-align: center;
+  font-family: Lato;
+}
 
 
-  .header svg {
-    font-size: 1.5rem;
-    vertical-align: middle;
-  }
+.header svg {
+  font-size: 1.5rem;
+  vertical-align: middle;
+}
 
-  .header a {
-    color:white;
-    font-family: Lato;
-    white-space: nowrap;
-  }
+.header a {
+  color:white;
+  font-family: Lato;
+  white-space: nowrap;
+}
 
 
-  .line {
-    margin: 1rem 0;
-    color: inherit;
-    border: 0;
-    opacity: .25;
-  }
+.line {
+  margin: 1rem 0;
+  color: inherit;
+  border: 0;
+  opacity: .25;
+}
 
-  .logo {
-    text-align: center;
-    width: 100%;
-  }
+.logo {
+  text-align: center;
+  width: 100%;
+}
 
-  .logo img{
-    width: 35%;
-  }
+.logo img{
+  width: 35%;
+}
 
-  nav {
-    margin-top: 20px;
-    margin-bottom: 20px;
-    text-align: center;
-  }
+nav {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+}
 
-  nav a {
-    font-family: Sawah; 
-    color: rgba(255, 255, 255, .5);
-    letter-spacing: 5px;
-    display: inline-block;
-    white-space: nowrap;
-  }
+nav a {
+  font-family: Sawah; 
+  color: rgba(255, 255, 255, .5);
+  letter-spacing: 3px;
+  display: inline-block;
+  white-space: nowrap;
+}
 
-  nav a::first-letter {
-    color: rgb(17, 222, 17);
-  }
+nav a::first-letter {
+  color: rgb(17, 222, 17);
+}
 
-  nav a:hover {
-    color: white;
-    transition: 1s;
-  }
+
+nav a:hover {
+  color: white;
+  transition: 1s;
+}
 
 .homecontainer {
   margin: 0;
@@ -143,9 +142,12 @@
   font-size: 17px;
   font-family: Lato;
   background-color: #009147;
-  margin-left: 45%;
-  margin-right: 45%;
+  display:block;
+  margin: 0 auto;
   white-space: nowrap;
+  text-decoration: none !important;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
 .morecars a {
@@ -153,6 +155,7 @@
   border-radius: 5px;
   font-size: 17px;
   font-family: Lato;
+  text-decoration: none !important;
 }
 
 .morecars:hover {
@@ -175,7 +178,7 @@
 
 .seperator-right img {
   width: 70%;
-}
+} 
 
 
 .footer-autostrada-uc p {

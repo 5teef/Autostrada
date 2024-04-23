@@ -14,7 +14,8 @@ export default function VideoPlayer(){
         playing={true}
         muted={true}
         loop={true}
-        controls={true}
+        controls={false}
+        pip={false}
       />
     </div>
   )

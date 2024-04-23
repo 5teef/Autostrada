@@ -6,6 +6,10 @@
 
 * {
   box-sizing: border-box;
+  -webkit-user-drag: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
 }
 
 body{
@@ -147,6 +151,7 @@ nav a:hover {
   font-family: Lato;
   background-color: #006832;
   border: none;
+  text-shadow: 1px 1px black;
 }
 
 .morecars a {

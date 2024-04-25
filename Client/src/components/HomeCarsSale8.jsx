@@ -13,7 +13,7 @@ export default function CarsEight() {
       <Container>
         <Row className="careight-container">
           {/* Bil 1 */}
-          <Col xs={12} sm={6} md={6} lg={4} className="car-section">
+          <Col xs={12} sm={6} md={6} lg={4} xl={3} className="car-section">
             <Link to="/car/BMW-M550-d-xDrive-Touring-Ultimate-Edition-FULLUTRUSTAD" style={{ textDecoration: 'none' }}>
               <img src="/Autostrada/cars/BMW-550.jpg" alt="BMW M550-d xDrive Touring Ultimate Edition FULLUTRUSTAD" className="car-image img-fluid" />
               <div className="car">
@@ -44,7 +44,7 @@ export default function CarsEight() {
           </Col>
 
           {/* Bil 2 */}
-          <Col xs={12} sm={6} md={6} lg={4} className="car-section">
+          <Col xs={12} sm={6} md={6} lg={4} xl={3} className="car-section">
             <Link to="/car/BMW-M550-d-xDrive-Touring-Ultimate-Edition-FULLUTRUSTAD" style={{ textDecoration: 'none' }}>
               <img src="/Autostrada/cars/BMW-550.jpg" alt="BMW M550-d xDrive Touring Ultimate Edition FULLUTRUSTAD" className="car-image img-fluid" />
               <div className="car">
@@ -75,7 +75,7 @@ export default function CarsEight() {
           </Col>
 
           {/* Bil 3 */}
-          <Col xs={12} sm={6} md={6} lg={4} className="car-section">
+          <Col xs={12} sm={6} md={6} lg={4} xl={3} className="car-section">
             <Link to="/car/BMW-M550-d-xDrive-Touring-Ultimate-Edition-FULLUTRUSTAD" style={{ textDecoration: 'none' }}>
               <img src="/Autostrada/cars/BMW-550.jpg" alt="BMW M550-d xDrive Touring Ultimate Edition FULLUTRUSTAD" className="car-image img-fluid" />
               <div className="car">
@@ -106,7 +106,7 @@ export default function CarsEight() {
           </Col>
 
           {/* Bil 4 */}
-          <Col xs={12} sm={6} md={6} lg={4} className="car-section">
+          <Col xs={12} sm={6} md={6} lg={4} xl={3} className="car-section">
             <Link to="/car/BMW-M550-d-xDrive-Touring-Ultimate-Edition-FULLUTRUSTAD" style={{ textDecoration: 'none' }}>
               <img src="/Autostrada/cars/BMW-550.jpg" alt="BMW M550-d xDrive Touring Ultimate Edition FULLUTRUSTAD" className="car-image img-fluid" />
               <div className="car">
@@ -137,7 +137,7 @@ export default function CarsEight() {
           </Col>
 
           {/* Bil 5 */}
-          <Col xs={12} sm={6} md={6} lg={4} className="car-section">
+          <Col xs={12} sm={6} md={6} lg={4} xl={3} className="car-section">
             <Link to="/car/BMW-M550-d-xDrive-Touring-Ultimate-Edition-FULLUTRUSTAD" style={{ textDecoration: 'none' }}>
               <img src="/Autostrada/cars/BMW-550.jpg" alt="BMW M550-d xDrive Touring Ultimate Edition FULLUTRUSTAD" className="car-image img-fluid" />
               <div className="car">
@@ -168,7 +168,7 @@ export default function CarsEight() {
           </Col>
 
           {/* Bil 6 */}
-          <Col xs={12} sm={6} md={6} lg={4} className="car-section">
+          <Col xs={12} sm={6} md={6} lg={4} xl={3} className="car-section">
             <Link to="/car/BMW-M550-d-xDrive-Touring-Ultimate-Edition-FULLUTRUSTAD" style={{ textDecoration: 'none' }}>
               <img src="/Autostrada/cars/BMW-550.jpg" alt="BMW M550-d xDrive Touring Ultimate Edition FULLUTRUSTAD" className="car-image img-fluid" />
               <div className="car">

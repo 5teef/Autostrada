@@ -17,7 +17,8 @@ body{
   padding: 0;
   width: 100%;
   background-color: black;
-}
+  font-family: Lato;
+} 
 
 .header {
   display: flex;
@@ -36,14 +37,6 @@ body{
   color:white;
   font-family: Lato;
   white-space: nowrap;
-}
-
-
-.line {
-  margin: 1rem 0;
-  color: inherit;
-  border: 0;
-  opacity: .25;
 }
 
 .logo {
@@ -149,19 +142,17 @@ nav a:hover {
 .morecars {
   color: white;
   font-family: Lato;
-  background-color: #006832;
+  background-color: #009146;
   border: none;
-  text-shadow: 1px 1px black;
 }
 
-.morecars a {
-  color: white;
-}
 
+/*
 .morecars:hover {
   color: white;
-  background-color: #009147;
+  background-color: #009146;
 }
+*/
 
 
 .line-separator-car img {
@@ -199,6 +190,39 @@ nav a:hover {
   justify-content: space-evenly;
 }
 
+
+[data-testid="map"] { 
+  border-radius: 10px;
+}
+
+/*Adress grävmaskinsvägen */
+.footer h2 {
+  margin-top: 20px;
+  font-size: 1.3rem;
+  text-align: center;
+  color: whitesmoke;
+  user-select: text;
+}
+
+.oppetider {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  margin-top: 5px;
+  align-items: center;
+}
+
+.oppetider p {
+  white-space: nowrap;
+  background-color: #009146;
+  color: white;
+  border-radius: 5px;
+  padding: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-weight: 500;
+}
+
 .trademark {
   margin-top: 20px;
   font-family: Lato;
@@ -214,8 +238,8 @@ nav a:hover {
   
 
   /* Extra small devices (phones, 576px and down) */
-  @media (max-width: 575.98px) {
-    /* Din CSS för extra små skärmar XS */
+@media (max-width: 575.98px) {
+  /* Din CSS för extra små skärmar XS */
   .nav {
       font-size: 0.55rem;
     }
@@ -237,129 +261,133 @@ nav a:hover {
   }
 
 
-  }
+}
   /* Extra small devices (phones, 576px and down) */
-  @media (max-width: 575.98px) {
-    /* Din CSS för extra små skärmar XS */
-    .nav {
-      font-size: 0.55rem;
-    }
-
-    .nav a {
-      margin-bottom: 15px;
-    }
-
-    .header a {
-      font-size: 1.2rem;
-    }
-
-    .logo img {
-      width: 60%;
-    }
-
-    .footer-autostrada-uc .uc img {
-      width: 35%;
-    }
-
-    /* Lägg till margin-bottom här */
-    .header .row {
-      margin-bottom: 20px;
-    }
+@media (max-width: 575.98px) {
+  /* Din CSS för extra små skärmar XS */
+  .nav {
+    font-size: 0.55rem;
   }
+
+  .nav a {
+    margin-bottom: 15px;
+  }
+
+  .header a {
+    font-size: 1.2rem;
+  }
+
+  .logo img {
+    width: 60%;
+  }
+
+  .footer-autostrada-uc .uc img {
+    width: 35%;
+  }
+
+  .oppetider {
+    flex-direction: column;
+  }
+
+}
 
   /* Small devices (landscape phones, 576px and up) */
-  @media (min-width: 576px) and (max-width: 767.98px) {
-    /* Din CSS för små skärmar SM */
-    .nav {
-      font-size: 0.7rem;
-    }
-
-    .nav a {
-      margin-bottom: 15px;
-    }
-
-    .header a {
-      font-size: 1.4rem;
-    }
-
-    .logo img {
-      width: 60%;
-    }
-
-    .footer-autostrada-uc .uc img {
-      width: 30%;
-    } 
-
-    /* Lägg till margin-bottom här */
-    .header .row {
-      margin-bottom: 20px;
-    }
+@media (min-width: 576px) and (max-width: 767.98px) {
+  /* Din CSS för små skärmar SM */
+  .nav {
+    font-size: 0.7rem;
   }
+
+  .nav a {
+    margin-bottom: 15px;
+  }
+
+  .header a {
+    font-size: 1.4rem;
+  }
+
+  .logo img {
+    width: 60%;
+  }
+
+  .footer-autostrada-uc .uc img {
+    width: 30%;
+  } 
+
+  /* Lägg till margin-bottom här */
+  .header .row {
+    margin-bottom: 20px;
+  }
+
+  .oppetider {
+    flex-direction: column;
+  }
+}
 
   /* Medium devices (tablets, 768px and up) */
-  @media (min-width: 768px) and (max-width: 991.98px) {
-    /* Din CSS för medelstora skärmar MD */
-    .nav {
-      font-size: 0.75rem;
-    }
-
-    .nav a {
-      margin-bottom: 15px;
-    }
-
-    .header {
-      display: flex;
-      justify-content: space-evenly;
-    }
-
-    .header a {
-      font-size: 1.2rem;
-    }
-
-    .logo img {
-      width: 50%;
-    }
-
-    /* Lägg till margin-bottom här */
-    .header .row {
-      margin-bottom: 20px;
-    }
+@media (min-width: 768px) and (max-width: 991.98px) {
+  /* Din CSS för medelstora skärmar MD */
+  .nav {
+    font-size: 0.75rem;
   }
 
-  /* Large devices (desktops, 992px and up) */
-  @media (min-width: 992px) and (max-width: 1199.98px) {
-    /* Din CSS för större skärmar än medelstora men mindre än extra stora LG */
-    .nav {
-      font-size: 0.51rem;
-      justify-content: space-evenly;
-    }
-
-    .header a {
-      font-size: 1.5rem;
-    }
-
-    /* Lägg till margin-bottom här */
-    .header .row {
-      margin-bottom: 20px;
-    }
+  .nav a {
+    margin-bottom: 15px;
   }
 
-  /* Extra large devices (large desktops, 1200px and up) */
-  @media (min-width: 1200px) {
-    /* Din CSS för extra stora skärmar XL */
-    .nav {
-      font-size: 0.65rem;
-      justify-content: space-evenly;
-    }
-
-    .header a {
-      font-size: 1.8rem;
-    }
+  .header {
+    display: flex;
+    justify-content: space-evenly;
   }
 
-  /* Extra large devices (large desktops, 1200px and up) */
-  @media (min-width: 1400px) {
-    .nav {
-      font-size: 0.80rem;
-    }
+  .header a {
+    font-size: 1.2rem;
   }
+
+  .logo img {
+    width: 50%;
+  }
+
+  /* Lägg till margin-bottom här */
+  .header .row {
+    margin-bottom: 20px;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  /* Din CSS för större skärmar än medelstora men mindre än extra stora LG */
+  .nav {
+    font-size: 0.51rem;
+    justify-content: space-evenly;
+  }
+
+  .header a {
+    font-size: 1.5rem;
+  }
+
+  /* Lägg till margin-bottom här */
+  .header .row {
+    margin-bottom: 20px;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  /* Din CSS för extra stora skärmar XL */
+  .nav {
+    font-size: 0.65rem;
+    justify-content: space-evenly;
+  }
+
+  .header a {
+    font-size: 1.8rem;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1400px) {
+  .nav {
+    font-size: 0.80rem;
+  }
+}

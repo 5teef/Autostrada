@@ -74,7 +74,7 @@ Error generating stack: `+o.message+`
           width='100%'
           style="width: 100%"
         >
-        <source style={{ width: '100%' }}" src="${Ds}" type="video/mp4" />
+        <source style="width: 100%" src="${Ds}" type="video/mp4" />
         </video>`}})}const it="/Autostrada/img/left.png",oh="/Autostrada/img/twovolvo.png";var cd={exports:{}};/*!
 	Copyright (c) 2018 Jed Watson.
 	Licensed under the MIT License (MIT), see

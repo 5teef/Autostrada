@@ -72,6 +72,22 @@ nav a:hover {
   transition: 1s;
 }
 
+.video-video {
+  width: 100%;
+}
+
+.video-video video {
+  width: 100%;
+}
+
+.video-img {
+  width: 100%;
+}
+
+.video-img video {
+  width: 100%;
+}
+
 .homecontainer {
   margin: 0;
   padding: 0;
@@ -238,6 +254,14 @@ nav a:hover {
 .nopage {
   text-align: center;
   color: white;
+}
+
+@media not all and (min-resolution:.001dpcm) {
+  @supports (-webkit-appearance:none) {
+    .video-video video {
+      width: 100%;
+    }
+  }
 }
 
   /* Extra small devices (phones, 576px and down) */

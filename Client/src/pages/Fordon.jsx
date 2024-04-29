@@ -2,7 +2,6 @@ import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { Container, Row, Col } from 'react-bootstrap';
 import Left from "/img/left.png";
-import Button from 'react-bootstrap/Button';
 
 export default function CarsEight() {
   const [cars, setItems] = useState([]);
@@ -66,13 +65,7 @@ export default function CarsEight() {
         </Row>
       </Container>
 
-      <div className="morecars-div">
-        <Link to="/Autostrada/fordon">
-          <Button className="morecars" variant="secondary" size="lg" style={{ textDecoration: 'none' }}>
-            Fler bilar!
-          </Button>
-        </Link>
-      </div>
+      
 
     </>
   );

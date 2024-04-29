@@ -1,3 +1,4 @@
+import { useRef } from "react";
 import { Link } from "react-router-dom";
 import { FaRegClock } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
@@ -6,6 +7,13 @@ import { CiPhone } from "react-icons/ci";
 import { Container, Row, Col } from 'react-bootstrap';
 
 export default function Header() {
+
+  const oppetiderRef = useRef(null); // Referens till öppettider-elementet
+
+  const handleScrollToOppetider = () => {
+    oppetiderRef.current.scrollIntoView({ behavior: 'smooth' });
+  };
+
 
   const day = new Date().getDay();
 
@@ -31,17 +39,17 @@ export default function Header() {
   return (
     <div>
       <Container fluid>
-        <Row className="header justify-content-between">
-          <Col xs={6} md={2} lg={2}>
-            <Link to="/Autostrada" style={{ textDecoration: 'none' }}> <FaRegClock /> {oppetider()}</Link>
+        <Row className="header  justify-content-sm-around justify-content-lg-around">
+          <Col xs={12} sm={6} md="auto" lg="auto">
+            <Link to="#oppetider" onClick={handleScrollToOppetider} style={{ textDecoration: 'none' }}>  <FaRegClock /> {oppetider()}</Link>
           </Col>
-          <Col xs={6} md={3} lg={3}>
+          <Col xs={12} sm={6} md="auto" lg="auto">
             <Link to="https://www.instagram.com/autostrada.nu/" style={{ textDecoration: 'none' }}><FaInstagram /> autostrada.nu</Link>
           </Col>
-          <Col xs={6} md={3} lg={3}>
+          <Col xs={12} sm={6} md="auto" lg="auto">
             <Link to="mailto:info@autostrada.nu" style={{ textDecoration: 'none' }}><MdMailOutline /> info@autostrada.nu</Link>
           </Col>
-          <Col xs={6} md={3} lg={3}>
+          <Col xs={12} sm={6} md="auto" lg="auto">
             <Link to="tel:+4672-0079292" style={{ textDecoration: 'none' }}> <CiPhone /> +4672 - 00 79 292</Link>
           </Col>
         </Row>

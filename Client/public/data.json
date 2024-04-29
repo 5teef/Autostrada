@@ -17,7 +17,7 @@
       "slug": "Mercedes-Benz-AMG-E-63-S-T-4MATIC+-612hk-Keramiska-FULLUTR2",
       "title": "Mercedes-Benz AMG E 63 S T 4MATIC+ |612hk|Keramiska|FULLUTR|",
       "undertitle": "Kolfiberpaket in samt ut - AMG exhaust system - AMG drivers package - Öppningsbar panorama",
-      "price": 154900,
+      "price": 1549900,
       "img": "/Autostrada/cars/Benz-E63S.jpg",
       "year": "2021",
       "mil": 6100,
@@ -41,7 +41,7 @@
       "slug": "Mercedes-Benz-AMG-E-63-S-T-4MATIC+-612hk-Keramiska-FULLUTR4",
       "title": "Mercedes-Benz AMG E 63 S T 4MATIC+ |612hk|Keramiska|FULLUTR|",
       "undertitle": "Kolfiberpaket in samt ut - AMG exhaust system - AMG drivers package - Öppningsbar panorama",
-      "price": 154900,
+      "price": 1549900,
       "img": "/Autostrada/cars/Benz-E63S.jpg",
       "year": "2021",
       "mil": 6100,
@@ -62,18 +62,6 @@
     },
     {
       "id": "6",
-      "slug": "BMW-M550-d-xDrive-Touring-Ultimate-Edition-FULLUTRUSTAD6",
-      "title": "BMW M550-d xDrive Touring Ultimate Edition FULLUTRUSTAD",
-      "undertitle": "Massagesäten, M-sportpaket, Bower & Wilkins High End Surround-ljudsystem, Head-Up Display",
-      "price": 469900,
-      "img": "/Autostrada/cars/BMW-550.jpg",
-      "year": "2021",
-      "mil": 6100,
-      "vaxel": "Automat",
-      "bransle": "Bensin"
-    },
-    {
-      "id": "7",
       "slug": "BMW-M550-d-xDrive-Touring-Ultimate-Edition-FULLUTRUSTAD75",
       "title": "BMW M550-d xDrive Touring Ultimate Edition FULLUTRUSTAD",
       "undertitle": "Massagesäten, M-sportpaket, Bower & Wilkins High End Surround-ljudsystem, Head-Up Display",
@@ -85,7 +73,7 @@
       "bransle": "Bensin"
     },
     {
-      "id": "8",
+      "id": "7",
       "slug": "BMW-M550-d-xDrive-Touring-Ultimate-Edition-FULLUTRUSTAD58",
       "title": "BMW M550-d xDrive Touring Ultimate Edition FULLUTRUSTAD",
       "undertitle": "Massagesäten, M-sportpaket, Bower & Wilkins High End Surround-ljudsystem, Head-Up Display",
@@ -97,7 +85,7 @@
       "bransle": "Bensin"
     },
     {
-      "id": "9",
+      "id": "8",
       "slug": "BMW-M550-d-xDrive-Touring-Ultimate-Edition-FULLUTRUSTAD568",
       "title": "BMW M550-d xDrive Touring Ultimate Edition FULLUTRUSTAD",
       "undertitle": "Massagesäten, M-sportpaket, Bower & Wilkins High End Surround-ljudsystem, Head-Up Display",
@@ -109,7 +97,7 @@
       "bransle": "Bensin"
     },
     {
-      "id": "10",
+      "id": "9",
       "slug": "BMW-M550-d-xDrive-Touring-Ultimate-Edition-FULLUTRUSTAD658",
       "title": "BMW M550-d xDrive Touring Ultimate Edition FULLUTRUSTAD",
       "undertitle": "Massagesäten, M-sportpaket, Bower & Wilkins High End Surround-ljudsystem, Head-Up Display",
@@ -121,7 +109,7 @@
       "bransle": "Bensin"
     },
     {
-      "id": "11",
+      "id": "10",
       "slug": "BMW-M550-d-xDrive-Touring-Ultimate-Edition-FULLUTRUSTAD158",
       "title": "BMW M550-d xDrive Touring Ultimate Edition FULLUTRUSTAD",
       "undertitle": "Massagesäten, M-sportpaket, Bower & Wilkins High End Surround-ljudsystem, Head-Up Display",
@@ -133,7 +121,7 @@
       "bransle": "Bensin"
     },
     {
-      "id": "12",
+      "id": "11",
       "slug": "BMW-M550-d-xDrive-Touring-Ultimate-Edition-FULLUTRUSTAD258",
       "title": "BMW M550-d xDrive Touring Ultimate Edition FULLUTRUSTAD",
       "undertitle": "Massagesäten, M-sportpaket, Bower & Wilkins High End Surround-ljudsystem, Head-Up Display",
@@ -145,7 +133,7 @@
       "bransle": "Bensin"
     },
     {
-      "id": "13",
+      "id": "12",
       "slug": "BMW-M550-d-xDrive-Touring-Ultimate-Edition-FULLUTRUSTAD558",
       "title": "BMW M550-d xDrive Touring Ultimate Edition FULLUTRUSTAD",
       "undertitle": "Massagesäten, M-sportpaket, Bower & Wilkins High End Surround-ljudsystem, Head-Up Display",
@@ -155,18 +143,6 @@
       "mil": 6100,
       "vaxel": "Automat",
       "bransle": "Bensin"
-    }
-  ],
-  "test": [
-    {
-      "id": "1",
-      "title": "fffIs",
-      "content": "Hi there!"
-    },
-    {
-      "id": "2",
-      "title": "JSON Server: A Developer's Best Friend",
-      "content": "Hey! Have a great day"
     }
   ]
 }

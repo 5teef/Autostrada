@@ -1,5 +1,5 @@
 {
-  "/api/cars": {
+    "/api/cars": {
     "GET": {
       "action": "db.cars"
     },

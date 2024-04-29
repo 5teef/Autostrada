@@ -9,6 +9,8 @@ import Video from "../components/AutostradaVideo"
 import HomePartner from "../components/HomePartner"
 import CarsEight from "../components/HomeCarsSale8"
 import SeperatorRight from "../components/SeperatorSite_Right"
+import GoogleReview from "../components/GoogleReviews"
+import SeperatorLeft from "../components/SeperatorSite_Left"
 
 export default function Home() {
 
@@ -18,6 +20,8 @@ export default function Home() {
       <HomePartner />
       <CarsEight />
       <SeperatorRight />
+      <GoogleReview />
+      <SeperatorLeft />
     </div>
   )
 

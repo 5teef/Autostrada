@@ -1,4 +1,3 @@
-import { useRef } from "react";
 import { Link } from "react-router-dom";
 import { FaRegClock } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
@@ -8,10 +7,12 @@ import { Container, Row, Col } from 'react-bootstrap';
 
 export default function Header() {
 
-  const oppetiderRef = useRef(null); // Referens till öppettider-elementet
 
   const handleScrollToOppetider = () => {
-    oppetiderRef.current.scrollIntoView({ behavior: 'smooth' });
+    const oppetiderElement = document.getElementById('oppetider');
+    if (oppetiderElement) {
+      oppetiderElement.scrollIntoView({ behavior: 'smooth' });
+    }
   };
 
 

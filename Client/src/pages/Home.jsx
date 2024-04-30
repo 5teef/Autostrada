@@ -14,11 +14,6 @@ import SeperatorLeft from "../components/SeperatorSite_Left"
 
 export default function Home() {
 
-
-  // <MyBids />
-  // <MyItems />
-  // Borttagna nedan tills de är implementerade i Server och refakturerade här
-
   return (
     <div>
       <Video />

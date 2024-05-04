@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+* {
+  font-family: Lato;
+  box-sizing: border-box;
+}
+
+.car-container {
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 100px;
+}
+
+
+.title {
+  color: white;
+}
+
+.title img {
+  position: relative;
+  top: -10px;
+  width: 100%;
+}
+
+.details {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.car-image-details {
+  width: 65%;
+}
+
+.car-image-details img {
+  width: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.company-info {
+  width: 30%;
+  white-space: nowrap;
+}
+
+.company-info h2 {
+  color: white;
+}
+
+
+.eslov {
+  background-color: white;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+
+.info {
+  display: flex;
+  align-items: flex-start;
+  background-color: white;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.info svg {
+  font-size: 23pt;
+  color: black;
+
+}
+
+.info h4 {
+  margin-left: 30px;
+}
+
+
+.car-details {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 0px 20px 0px 20px;
+  margin-top: 30px;
+  color: white;
+}
+
+.car-details>div {
+  display: flex;
+  flex-direction: column;
+  /* Centrera innehållet vertikalt */
+  /* Centrera texten horisontellt */
+  white-space: nowrap;
+}
+
+.car-details h2::first-letter {
+    color: rgb(17, 222, 17);
+}
+
+.title-seperator {
+  position: relative;
+  width: 100%;
+  top: -10px;
+}
+
+.title-seperator img {
+  width: 100%;
+  max-width: 100px;
+  /* Justera bildens bredd efter behov */
+}
+
+.modal-header {
+  background-color: rgb(17, 222, 17);
+}
+
+
+
+@media screen and (max-width: 600px) {
+
+  .test {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+
+  .info {
+    margin-right: 5px;
+    width: 70%;
+    min-width: 250px;
+  }
+
+  .info h4 {
+    margin-left: 10px;
+  }
+
+  .details {
+    flex-direction: column;
+  }
+
+  .company-info {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .car-image-details {
+    width: 100%;
+  }
+
+  .car-container {
+    width: 90%;
+    margin-top: 30px;
+  }
+
+  .car-details h2 {
+    font-size: 1.5rem;
+  }
+
+  .car-details h4 {
+    font-size: 1rem;
+  }
+}
+
+
+@media (min-width: 601px) and (max-width: 1042px) {
+  /* Din CSS-kod för skärmar som är 900px eller smalare här */
+
+.info-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+
+  .info {
+    margin-right: 5px;
+    width: 40%;
+    min-width: 250px;
+  }
+
+  .info h4 {
+    margin-left: 30px;
+  }
+
+  .details {
+    flex-direction: column;
+  }
+
+  .company-info {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .car-image-details {
+    width: 100%;
+  }
+
+  .car-container {
+    width: 90%;
+    margin-top: 30px;
+  }
+
+
+
+}
+
+
+

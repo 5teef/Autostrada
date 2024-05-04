@@ -12,6 +12,8 @@
   user-select: none;
 }
 
+
+
 body{
   margin: 0;
   padding: 0;
@@ -111,6 +113,11 @@ nav a:hover {
   font-family: Lato;
 }
 
+.car-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
 
 .car-section img {
   border-radius: 10px;
@@ -127,7 +134,12 @@ nav a:hover {
 .cartext {
   color: white;
   margin-top: 10px;
+  height: 50px;
+  overflow-wrap: break-word;
+  
 }
+
+
 
 .car-info {
   color:white;

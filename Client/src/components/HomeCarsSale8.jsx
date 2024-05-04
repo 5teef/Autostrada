@@ -10,9 +10,17 @@ export default function CarsEight() {
   useEffect(() => {
     async function loadCars() {
       try {
-        const response = await fetch("/api/cars");
+        const response = await fetch("https://www.autostrada.nu/api/cars.php");
         const data = await response.json();
-        setItems(data.slice(0, 8));
+
+        // Loopa igenom varje bilobjekt och splitta utrustningen till de första 10 värdena
+        data.forEach(car => {
+          car.description = car.description.split(' - ').slice(0, 4).join(' '); // Splitta och välj de första 10 värdena
+        });
+
+
+        setItems(data.slice(0, 8))
+        console.log(data)
       } catch (error) {
         console.error("Error fetching cars:", error);
       }
@@ -35,10 +43,10 @@ export default function CarsEight() {
           {cars.map(car => (
             <Col key={car.slug} xs={12} sm={6} md={6} lg={4} xl={3} className="car-section">
               <Link to={{ pathname: `/Autostrada/fordon/${car.slug}` }} style={{ textDecoration: 'none' }}>
-                <img src={car.img} alt={car.title} className="car-image img-fluid" />
+                <img src={"/Autostrada/cars/" + car.photo} alt={car.photo} className="car-image img-fluid" />
                 <div className="car">
-                  <h2>{car.title}</h2>
-                  <div><p className="cartext">{car.undertitle}</p></div>
+                  <h2>{car.name}</h2>
+                  {<div><p className="cartext">{car.description}</p></div>}
                 </div>
               </Link>
               <Row className="car-info justify-content-space-between" >
@@ -46,7 +54,7 @@ export default function CarsEight() {
                   <div><p className="carprice text-nowrap">{formatPrice(car.price)} SEK</p></div>
                 </Col>
                 <Col xs="auto" sm="auto" md="auto" lg="auto" xl="auto" xxl="auto">
-                  <div><p className="caryear text-nowrap">{car.year}</p></div>
+                  <div><p className="caryear text-nowrap">{car.artal}</p></div>
                 </Col>
                 <Col xs="auto" sm="auto" md="auto" lg="auto" xl="auto" xxl="auto">
                   <div><p className="carmile text-nowrap">{car.mil} mil</p></div>
@@ -77,6 +85,7 @@ export default function CarsEight() {
     </>
   );
 }
+
 
 
 

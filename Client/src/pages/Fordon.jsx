@@ -20,7 +20,7 @@ export default function CarsEight() {
 
 
         setItems(data)
-        console.log(data)
+
       } catch (error) {
         console.error("Error fetching cars:", error);
       }

@@ -8,6 +8,7 @@ import { BsPinMapFill } from "react-icons/bs";
 import { BsCalculatorFill } from "react-icons/bs";
 import UtrustningModal from "../components/UtrustningModal";
 import Button from 'react-bootstrap/Button';
+import Finansiering from "../components/Finans";
 
 export default function ItemDetails() {
   const { slug } = useParams();
@@ -40,7 +41,7 @@ export default function ItemDetails() {
     return price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ");
   };
 
-  const descriptions = car.description.split(" | ");
+  const descriptions = car.description.split(",");
 
 
   // Ersätter alla lodräta streck med mellanslag
@@ -142,7 +143,7 @@ export default function ItemDetails() {
 
 
       </div>
-
+      <Finansiering bilpris={car.price}/>
       </>
   );
 }

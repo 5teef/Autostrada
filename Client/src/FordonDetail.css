@@ -110,11 +110,22 @@
   /* Justera bildens bredd efter behov */
 }
 
-.modal-header {
-  background-color: rgb(17, 222, 17);
+
+.modal-content {
+  background-color: rgb(18, 18, 18);
+  color: white;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 11px 15px -7px,
+    rgba(0, 0, 0, 0.14) 0px 24px 38px 3px,
+    rgba(0, 0, 0, 0.12) 0p;
 }
 
+.modal-content button {
+  background-color: white;
+}
 
+.finans {
+  width: 100%;
+}
 
 @media screen and (max-width: 600px) {
 

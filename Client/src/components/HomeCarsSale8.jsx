@@ -15,12 +15,11 @@ export default function CarsEight() {
 
         // Loopa igenom varje bilobjekt och splitta utrustningen till de första 10 värdena
         data.forEach(car => {
-          car.description = car.description.split(' - ').slice(0, 4).join(' '); // Splitta och välj de första 10 värdena
+          car.description = car.description.split(',').slice(0, 4).join(' | '); // Splitta och välj de första 10 värdena
         });
 
 
         setItems(data.slice(0, 8))
-        console.log(data)
       } catch (error) {
         console.error("Error fetching cars:", error);
       }

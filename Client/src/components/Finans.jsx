@@ -90,7 +90,7 @@ export default function Finansiering({ bilpris }) {
 
           {/* Ränta */}
           <div className="finansiering-kolumn">
-            <label>Ränta (%): {ranta}</label>
+            <label>Ränta (%): {ranta} %</label>
             <input
               ref={rantaRef}
               className="slider"

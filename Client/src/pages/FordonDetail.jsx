@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import '../FordonDetail.css';
 import Left from "/img/left.png";
+import Right from "/img/right.png";
 import { FaCar } from "react-icons/fa";
 import { BsTelephoneFill } from "react-icons/bs";
 import { BsPinMapFill } from "react-icons/bs";
@@ -9,6 +10,7 @@ import { BsCalculatorFill } from "react-icons/bs";
 import UtrustningModal from "../components/UtrustningModal";
 import Button from 'react-bootstrap/Button';
 import Finansiering from "../components/Finans";
+import Kontakt from "../components/KontaktaOss";
 
 export default function ItemDetails() {
   const { slug } = useParams();
@@ -52,7 +54,7 @@ export default function ItemDetails() {
     <div className="car-container">
         <div className="title">
           <h2>{formattedName}</h2>
-          <img src={Left} />
+          <img src={Left} alt="Left-Seperator" />
         </div>
 
         <div className="details" >
@@ -143,7 +145,12 @@ export default function ItemDetails() {
 
 
       </div>
+
+      <div className="lineseperator">
+        <img src={Right} alt="Left-Seperator" />
+      </div>
       <Finansiering bilpris={car.price}/>
+      <Kontakt />
       </>
   );
 }

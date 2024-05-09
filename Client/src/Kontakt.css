@@ -1,0 +1,59 @@
+/* Main container style */
+.kontakt-container {
+  display: flex;
+  justify-content: space-between;
+  /* Aligns columns side by side for larger screens */
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 800px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+}
+
+/* Column styling */
+.kontakt-kolumn {
+  flex: 1;
+  /* Ensures equal width for both columns */
+  padding: 15px;
+  margin: 0 10px;
+  text-align: center;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 255, 42, 0.1);
+}
+
+/* Column title styling */
+.kolumn-titel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+ }
+
+
+
+
+.kontakt-ikon {
+  color: #28a745;
+  /* Changes icon color to green */
+  font-size: 2rem;
+  margin-right: 8px;
+}
+
+/* Media query for mobile devices */
+@media screen and (max-width: 600px) {
+  .kontakt-container {
+    flex-direction: column-reverse;
+    /* Changes layout direction to column for small screens */
+    justify-content: center;
+    align-items: center;
+    max-width: 90%;
+    /* Adjusts container width for smaller screens */
+  }
+
+  .kontakt-kolumn {
+    margin: 10px 0;
+    /* Adds vertical spacing between columns */
+  }
+}

@@ -127,6 +127,14 @@ export default function ItemDetails() {
 
           </div>
 
+        <div className="modell">
+          <h2><b>Modell</b></h2>
+          <div className="title-seperator">
+            <img src={Left} alt="line" />
+            <h4>{car.modell}</h4>
+          </div>
+        </div>
+
         <div className="motor-vaxellada">
           <h2><b>Motor & Växellåda</b></h2>
           <div className="title-seperator">
@@ -135,13 +143,7 @@ export default function ItemDetails() {
           </div>
         </div>
 
-        <div className="modell">
-          <h2><b>Modell</b></h2>
-          <div className="title-seperator">
-            <img src={Left} alt="line" />
-            <h4>{car.modell}</h4>
-          </div>
-        </div>
+
 
 
       </div>

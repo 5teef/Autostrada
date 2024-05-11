@@ -118,3 +118,13 @@
   
 }
 
+/* Media query for mobile devices */
+@media screen and (max-width: 600px) {
+
+
+.finansiering-container {
+    width: 90%;
+}
+
+
+}

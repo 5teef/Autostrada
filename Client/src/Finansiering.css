@@ -118,6 +118,56 @@
   
 }
 
+
+/* CSS i samma fil, lägg till dessa stilar */
+.finansiering-kolumn.full-width {
+  flex-basis: 100%;
+  /* Använder hela bredden */
+}
+
+/* Justerar bredden på input och textarea */
+.finansiering-kolumn input[type="text"],
+.finansiering-kolumn input[type="email"],
+.finansiering-kolumn input[type="tel"],
+.finansiering-kolumn textarea {
+  width: 100%;
+  /* Gör så att fälten använder hela tillgängliga bredden */
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-top: 5px;
+}
+
+.submit-button {
+  width: 100%;
+  /* Ger knappen full bredd */
+  padding: 10px 0;
+  /* Ger knappen höjd och vertikal padding */
+  background-color: #28a745;
+  /* Grön bakgrund */
+  color: white;
+  /* Vit text */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  /* Större text */
+  transition: background-color 0.3s ease;
+  /* Gör övergången mjukare när man hovrar över knappen */
+}
+
+.submit-button:hover {
+  background-color: #1c5f30;
+  /* Mörkare grön när man hovrar över knappen */
+}
+
+.form-control {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+  box-sizing: border-box;
+}
+
 /* Media query for mobile devices */
 @media screen and (max-width: 600px) {
 
@@ -126,5 +176,10 @@
     width: 90%;
 }
 
+.finansiering-kolumner {
+  flex-direction: column;
+}
+
 
 }
+

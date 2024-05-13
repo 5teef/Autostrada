@@ -73,9 +73,9 @@ export default function CarsEight() {
         </Row>
       </Container>
 
-      <div className="morecars-div">
+      <div className="button-div">
         <Link to="/Autostrada/fordon">
-          <Button className="morecars" variant="secondary" size="lg" style={{ textDecoration: 'none' }}>
+          <Button className="button" variant="secondary" size="lg" style={{ textDecoration: 'none' }}>
             Fler bilar!
           </Button>
         </Link>

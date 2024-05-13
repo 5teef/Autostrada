@@ -1,13 +1,19 @@
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom'
 
 import Home from '../pages/Home.jsx'
+import Fordon from '../pages/Fordon.jsx'
+import FordonDetail from '../pages/FordonDetail.jsx'
+import Salj from '../pages/Salj.jsx'
+import Kontakt from '../pages/Kontakt.jsx'
+import NoPage from '../pages/NoPage.jsx'
+
 import Header from './Header.jsx'
 import Nav from './Nav.jsx'
-import Footer from "./Footer.jsx"
-import Fordon from '../pages/Fordon.jsx'
 import Logo from "./LogoAutostrada.jsx"
-import NoPage from '../pages/NoPage.jsx'
-import FordonDetail from '../pages/FordonDetail.jsx'
+import Footer from "./Footer.jsx"
+
+
+
 /*import Login from '../pages/Login.jsx'
 import MyPage from '../pages/MyPage.jsx'
 import NewItem from '../pages/NewItem.jsx'
@@ -31,6 +37,8 @@ export default function Router() {
           <Route path="Autostrada/" element={<Home />} />
           <Route path="Autostrada/fordon" element={<Fordon />} />
           <Route path="Autostrada/fordon/:slug" element={<FordonDetail />} />
+          <Route path="Autostrada/salj" element={<Salj />} />
+          <Route path="Autostrada/KontaktaOss" element={<Kontakt />} />
           <Route path="*" element={<NoPage />} />
           
         </Routes>

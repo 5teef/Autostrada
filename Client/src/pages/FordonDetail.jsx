@@ -113,7 +113,7 @@ export default function ItemDetails() {
               </div>
             ))}
 
-            <Button size={'sm'} style={{ backgroundColor: 'rgb(255, 0, 0)', borderColor: 'rgb(255, 0, 0)' }} onClick={() => setModalShow(true)}>
+            <Button className="button" onClick={() => setModalShow(true)}>
               <b>Visa mer!</b>
             </Button>
 

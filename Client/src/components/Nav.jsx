@@ -13,13 +13,13 @@ export default function Nav() {
             <Link to="/Autostrada/fordon" style={{ textDecoration: 'none' }}>FORDON I LAGER</Link>
           </Col>
           <Col xs={12} sm={12} md={12} lg="auto">
-            <Link to="/" style={{ textDecoration: 'none' }}>SÄLJ DITT FORDON</Link>
+            <Link to="/Autostrada/salj" style={{ textDecoration: 'none' }}>SÄLJ DITT FORDON</Link>
           </Col>
           <Col xs={12} sm={12} md={12} lg="auto">
-            <Link to="/games" style={{ textDecoration: 'none' }}>NYHETER</Link>
+            <Link to="/" style={{ textDecoration: 'none' }}>NYHETER</Link>
           </Col>
           <Col xs={12} sm={12} md={12} lg="auto">
-            <Link to="/games" style={{ textDecoration: 'none' }}>KONTAKT</Link>
+            <Link to="/Autostrada/KontaktaOss" style={{ textDecoration: 'none' }}>KONTAKT</Link>
           </Col>
         </Row>
       </Container>

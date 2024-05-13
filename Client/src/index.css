@@ -143,7 +143,6 @@ nav a:hover {
 
 .car-info {
   color:white;
-  margin-top: 20px;
 }
 
 .car-info p {
@@ -161,26 +160,24 @@ nav a:hover {
     0px 0px 3px 4px rgba(0, 128, 0, 0.5);
 }
 
-.morecars-div {
+.button-div {
   text-align: center;
   margin-top: 50px;
   margin-bottom: 50px;
 }
 
-.morecars {
+.button {
+  text-align: center;
   color: white;
   font-family: Lato;
   background-color: #009146;
   border: none;
 }
 
-
-/*
-.morecars:hover {
+.button:hover {
   color: white;
-  background-color: #009146;
+  background-color: #1c5f30;
 }
-*/
 
 
 .line-separator-car img {

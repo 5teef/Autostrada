@@ -1,8 +1,6 @@
 import { Link } from "react-router-dom";
-import { FaRegClock } from "react-icons/fa";
-import { FaInstagram } from "react-icons/fa";
-import { MdMailOutline } from "react-icons/md";
-import { CiPhone } from "react-icons/ci";
+import { FaRegClock, FaInstagram } from "react-icons/fa";
+import { MdMailOutline, MdOutlinePhoneIphone } from 'react-icons/md';
 import { Container, Row, Col } from 'react-bootstrap';
 
 export default function Header() {
@@ -51,7 +49,7 @@ export default function Header() {
             <Link to="mailto:info@autostrada.nu" style={{ textDecoration: 'none' }}><MdMailOutline /> info@autostrada.nu</Link>
           </Col>
           <Col xs={12} sm={6} md="auto" lg="auto">
-            <Link to="tel:+4672-0079292" style={{ textDecoration: 'none' }}> <CiPhone /> +4672 - 00 79 292</Link>
+            <Link to="tel:+4672-0079292" style={{ textDecoration: 'none' }}> <MdOutlinePhoneIphone /> 010-660 06 28</Link>
           </Col>
         </Row>
       </Container>

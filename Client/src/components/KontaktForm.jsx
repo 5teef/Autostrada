@@ -65,7 +65,7 @@ function KontaktForm() {
   return (
     <>
       <div className="finansiering-container">
-        <h2>Kontakta Oss</h2>
+        <h2>Kontakta oss</h2>
         <form ref={formRef} onSubmit={handleSubmit} className="finansiering-kolumner">
           <div className="finansiering-kolumn">
             <label>Namn:</label>

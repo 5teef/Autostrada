@@ -9,7 +9,7 @@ export default function Kontakt() {
       <div className="kontakt-kolumn">
         <div className="kolumn-titel">
           <MdOutlinePhoneIphone className='kontakt-ikon' />
-          <h3>0720079292</h3>
+          <h3>010-660 06 28</h3>
         </div>
         <p className='kolumn-text'>Mån-fre 12:00-18:00<br />Lördag 10:00-16:00</p>
       </div>

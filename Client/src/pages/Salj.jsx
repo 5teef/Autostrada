@@ -1,8 +1,6 @@
 import salj from "/img/salj.png";
 import FormedlingSalja from "../components/FormedlingSalja";
 import '../Salj.css'; // Importera CSS-filen
-import Button from 'react-bootstrap/Button';
-
 
 export default function Salj() {
 
@@ -47,11 +45,7 @@ export default function Salj() {
       <p style={{ color: 'white', marginBottom: '10px' }}>
         Vi står för marknadsföring, visningar, och förhandlingar, samtidigt som vi erbjuder finansieringshjälp till potentiella köpare. Allt för att du ska kunna göra en trygg och lönsam affär.
       </p>
-      <div className="button-div">
-          <Button className="button" variant="secondary" size="lg" style={{ textDecoration: 'none' }}>
-            Kontakta oss!
-          </Button>
-      </div>
+
 
       <FormedlingSalja />
 

@@ -42,7 +42,7 @@ export default function UtrustningModal(props) {
           onClick={props.onHide}
           style={{ fontWeight: '700', backgroundColor: 'rgb(255, 255, 255)', borderColor: 'rgb(255, 255, 255)', color: 'black' }}
         >
-          Close
+          Stäng
         </Button>
       </Modal.Footer>
     </Modal>

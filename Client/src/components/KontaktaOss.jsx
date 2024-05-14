@@ -5,7 +5,7 @@ import '../Kontakt.css';
 export default function Kontakt() {
   return (
     <div className="kontakt-container">
-      <a href="tel:010-6600628" className="kontakt-kolumn">
+      <a href="tel:+4610-6600628" className="kontakt-kolumn">
         <div className="kolumn-titel">
           <MdOutlinePhoneIphone className='kontakt-ikon' />
           <h3>010-660 06 28</h3>

@@ -1,19 +1,18 @@
-// Import the necessary CSS file and icons
-import '../Kontakt.css';
 import { MdMailOutline, MdOutlinePhoneIphone } from 'react-icons/md';
+import '../Kontakt.css';
 
 // Create the `Kontakt` component
 export default function Kontakt() {
   return (
     <div className="kontakt-container">
-      <div className="kontakt-kolumn">
+      <a href="tel:010-6600628" className="kontakt-kolumn">
         <div className="kolumn-titel">
           <MdOutlinePhoneIphone className='kontakt-ikon' />
           <h3>010-660 06 28</h3>
         </div>
         <p className='kolumn-text'>Mån-fre 12:00-18:00<br />Lördag 10:00-16:00</p>
-      </div>
-      <div className="kontakt-kolumn">
+      </a>
+      <a href="mailto:info@autostrada.nu" className="kontakt-kolumn">
         <div className="kolumn-titel">
           <MdMailOutline className='kontakt-ikon' />
           <h3>Maila</h3>
@@ -22,7 +21,7 @@ export default function Kontakt() {
           Just nu är chatten stängd, men du kan
           maila oss så guidar vi dig genom bilköpet!
         </p>
-      </div>
+      </a>
     </div>
   );
 }

@@ -27,7 +27,7 @@ export default function App() {
         player.muted = true;
         player.setAttribute("muted", ""); // leave no stones unturned :)
         player.autoplay = true;
-      
+
         // Let's wait for an event loop tick and be async.
         setTimeout(() => {
           // player.play() might return a promise but it's not guaranteed crossbrowser.
@@ -48,9 +48,9 @@ export default function App() {
   }, []);
 
   return shouldUseImage ? (
-    <img className="video-img" src={mainVideo} alt="Muted Video" width={'100%'} style={{width: '100%' }} />
+    <img className="video-img" src={mainVideo} alt="Muted Video" width={'100%'} style={{ width: '100%' }} />
   ) : (
-      <div className="video-video" style={{ width: "100%" }}
+    <div className="video-video" style={{ width: "100%" }}
       ref={videoParentRef}
       dangerouslySetInnerHTML={{
         __html: `

@@ -49,7 +49,7 @@ export default function Header() {
             <Link to="mailto:info@autostrada.nu" style={{ textDecoration: 'none' }}><MdMailOutline /> info@autostrada.nu</Link>
           </Col>
           <Col xs={12} sm={6} md="auto" lg="auto">
-            <Link to="tel:+4672-0079292" style={{ textDecoration: 'none' }}> <MdOutlinePhoneIphone /> 010-660 06 28</Link>
+            <Link to="tel:+4610-6600628" style={{ textDecoration: 'none' }}> <MdOutlinePhoneIphone /> 010-660 06 28</Link>
           </Col>
         </Row>
       </Container>

@@ -9,7 +9,7 @@ function FormedlingSalja() {
   const [phoneNumber, setPhoneNumber] = useState('');
   const [countryCodes, setCountryCodes] = useState([]);
   const [selectedCountryCode, setSelectedCountryCode] = useState('+46');
-  const [formType, setFormType] = useState('förmedling'); // Lägg till en state för att hålla koll på vilken typ av form det är
+  const [formType, setFormType] = useState('förmedling');
   const [carDetails, setCarDetails] = useState({
     regNumber: '',
     mileage: '',
@@ -79,13 +79,13 @@ function FormedlingSalja() {
 
   return (
     <>
-      <div className="finansiering-container" style={{ width: '90%' }}>
+      <div className="finansiering-container">
         <h2>Förmedla eller sälj din bil smidigt med Autostrada!</h2>
 
         <form ref={formRef} onSubmit={handleSubmit} className="finansiering-kolumner">
           <div className="finansiering-kolumn full-width">
             <label>Jag vill:</label>
-            <select value={formType} onChange={(e) => setFormType(e.target.value)} className="form-control">
+            <select value={formType} onChange={(e) => setFormType(e.target.value)} className="form-control" required>
               <option value="förmedling">Förmedla</option>
               <option value="sälja">Sälja min bil</option>
             </select>
@@ -100,7 +100,7 @@ function FormedlingSalja() {
               onChange={(e) => setCarDetails({ ...carDetails, mileage: e.target.value })}
               placeholder="Ange nuvarande mätarställning"
               required
-              className="form-control" // Lägg till samma klass som de andra fälten
+              className="form-control"
             />
           </div>
 
@@ -112,6 +112,7 @@ function FormedlingSalja() {
               onChange={(e) => setCarDetails({ ...carDetails, equipment: e.target.value })}
               placeholder="Ange utrustning som är bra att veta"
               rows="4"
+              required
               className="form-control"
             ></textarea>
           </div>
@@ -119,7 +120,7 @@ function FormedlingSalja() {
           {formType === 'förmedling' && (
             <>
               <div className="finansiering-kolumn full-width">
-                <p>10 skäl att förmedla din bil via oss:</p>
+                <p><b>10 skäl att förmedla din bil via oss:</b></p>
                 <ul>
                   <li>Professionell värdering av din bil</li>
                   <li>Bred marknadsföring för snabb försäljning</li>
@@ -139,16 +140,14 @@ function FormedlingSalja() {
           {formType === 'sälja' && (
             <>
               <div className="finansiering-kolumn full-width">
-                <p>Kostnadsfri värdering i 3 olika steg</p>
+                <p><b>Kostnadsfri värdering i 3 olika steg</b></p>
                 <ul>
                   <li>Vi köper in bilar som gått max 20 000 mil</li>
-                  <li>Vi köper inte in bilar som är importerade</li>
                   <li>Vi betalar ut pengarna direkt till ditt konto</li>
                   <li>Vi hjälper till med finansiering</li>
                   <li>Vi hjälper dig med ägarbytet</li>
                   <li>Vi löser ditt billån och betalar ut ev mellanskillnad på ditt konto</li>
                   <li>Vi hjälper både privatkunder och företag</li>
-                  <li>Vi har öppet alla dagar i veckan</li>
                 </ul>
               </div>
 
@@ -176,7 +175,7 @@ function FormedlingSalja() {
           </div>
           <div className="finansiering-kolumn">
             <label>Landskod:</label>
-            <select value={selectedCountryCode} onChange={(e) => setSelectedCountryCode(e.target.value)} className="form-control">
+            <select value={selectedCountryCode} onChange={(e) => setSelectedCountryCode(e.target.value)} className="form-control" required>
               {countryCodes.map((country, index) => (
                 <option key={index} value={country.code}>{country.name} ({country.code})</option>
               ))}
@@ -184,7 +183,7 @@ function FormedlingSalja() {
           </div>
           <div className="finansiering-kolumn">
             <label>Telefonnummer:</label>
-            <input type="tel" name="phone" value={phoneNumber} onChange={handlePhoneInputChange} placeholder="T.ex. 0701234567" className="form-control" />
+            <input type="tel" name="phone" value={phoneNumber} onChange={handlePhoneInputChange} placeholder="T.ex. 0701234567" required className="form-control" />
           </div>
           <div className="finansiering-kolumn full-width">
             <label>Meddelande:</label>

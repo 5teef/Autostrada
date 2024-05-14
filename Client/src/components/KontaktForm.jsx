@@ -42,6 +42,7 @@ function KontaktForm() {
     const formData = new FormData(event.target);
     formData.append('country_code', selectedCountryCode);
     formData.append('phone', phoneNumber);
+    formData.append('form_type', 'Kontakta oss');  // Hårdkodad form_type
 
     try {
       const response = await fetch('https://www.autostrada.nu/api/mail_handler.php', {
@@ -68,15 +69,15 @@ function KontaktForm() {
         <form ref={formRef} onSubmit={handleSubmit} className="finansiering-kolumner">
           <div className="finansiering-kolumn">
             <label>Namn:</label>
-            <input type="text" name="name" placeholder="Ange ditt fullständiga namn" required />
+            <input type="text" name="name" placeholder="Ange ditt fullständiga namn" required className="form-control" />
           </div>
           <div className="finansiering-kolumn">
             <label>E-post:</label>
-            <input type="email" name="email" placeholder="din.email@example.com" required />
+            <input type="email" name="email" placeholder="din.email@example.com" required className="form-control" />
           </div>
           <div className="finansiering-kolumn">
             <label>Landskod:</label>
-            <select value={selectedCountryCode} onChange={(e) => setSelectedCountryCode(e.target.value)} className="form-control">
+            <select value={selectedCountryCode} onChange={(e) => setSelectedCountryCode(e.target.value)} className="form-control" required>
               {countryCodes.map((country, index) => (
                 <option key={index} value={country.code}>{country.name} ({country.code})</option>
               ))}
@@ -84,11 +85,11 @@ function KontaktForm() {
           </div>
           <div className="finansiering-kolumn">
             <label>Telefonnummer:</label>
-            <input type="tel" name="phone" value={phoneNumber} onChange={handlePhoneInputChange} placeholder="T.ex. 0701234567" />
+            <input type="tel" name="phone" value={phoneNumber} onChange={handlePhoneInputChange} placeholder="T.ex. 0701234567" required className="form-control" />
           </div>
           <div className="finansiering-kolumn full-width">
             <label>Meddelande:</label>
-            <textarea name="message" placeholder="Skriv ditt meddelande här" rows="4" required></textarea>
+            <textarea name="message" placeholder="Skriv ditt meddelande här" rows="4" required className="form-control"></textarea>
           </div>
           <div className="finansiering-kolumn">
             <button type="submit" className="submit-button">Skicka</button>

@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900&display=swap');
 @font-face {
   font-family: 'Sawah';
   src: url('../public/fonts/Sawah.otf') format('opentype');
@@ -12,29 +12,23 @@
   user-select: none;
 }
 
-body{
+body {
   margin: 0;
   padding: 0;
   width: 100%;
   background-color: black;
   font-family: Lato;
-} 
+}
 
 .header {
   display: flex;
-  margin-top: 15px; 
+  margin-top: 15px;
   text-align: center;
   font-family: Lato;
 }
 
-
-.header svg {
-  font-size: 1.5rem;
-  vertical-align: middle;
-}
-
 .header a {
-  color:white;
+  color: white;
   font-family: Lato;
   white-space: nowrap;
 }
@@ -44,7 +38,7 @@ body{
   width: 100%;
 }
 
-.logo img{
+.logo img {
   width: 35%;
 }
 
@@ -55,98 +49,67 @@ nav {
 }
 
 nav a {
-  font-family: Sawah; 
+  font-family: Sawah;
   color: rgba(255, 255, 255, .5);
   letter-spacing: 3px;
   display: inline-block;
   white-space: nowrap;
 }
 
-nav a::first-letter {
-  color: rgb(17, 222, 17);
-}
-
-
 nav a:hover {
   color: white;
   transition: 1s;
 }
 
-.video-video {
-  width: 100%;
+.careight-container {
+  padding: 20px;
 }
 
-.video-video video {
-  width: 100%;
+.car-grid {
+  display: flex;
+  flex-wrap: wrap; /* Gör layouten flexibel */
+  gap: 20px; /* Mellanrum mellan elementen */
+  justify-content: center; /* Centrerar elementen */
 }
 
-.video-img {
-  width: 100%;
-}
-
-.video-img video {
-  width: 100%;
-}
-
-.homecontainer {
-  margin: 0;
-  padding: 0;
-  margin-bottom: 50px;
-}
-
-.lineseperator-home img {
-  width: 90%;
-}
-
-.homecontainer .homepartner {
-  color: white;
-}
-
-.homecontainer .homepartner h2 {
-  font-family: Lato;
-  font-weight: 400;
-}
-
-.homecontainer .homepartner p {
-  font-family: Lato;
-}
-
-
-.car-section img {
+.car-item {
+  flex: 1 1 calc(33.333% - 20px); /* 3 kolumner på större skärmar */
+  max-width: calc(33.333% - 20px);
+  border: 1px solid #ddd;
   border-radius: 10px;
-  margin-top: 20px;
+  padding: 10px;
+  text-align: center;
+  background-color: white;
 }
 
-.car h2 {
-  font-size: 1em;
-  color: white;
-  margin-top: 20px;
-  font-weight: 600;
-}
-
-.cartext {
-  color: white;
-  margin-top: 10px;
+.car-image {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 10px;
 }
 
 .car-info {
-  color:white;
-  margin-top: 20px;
+  display: flex; /* Gör attributen horisontella */
+  justify-content: space-between; /* Jämnt mellanrum */
+  gap: 10px;
+  flex-wrap: wrap; /* Gör det responsivt för små skärmar */
+  margin-top: 10px;
 }
 
 .car-info p {
-  font-size: 0.9em;
-  color: black;
+  flex: 1 1 auto;
+  text-align: center;
+  margin: 0;
+  font-size: 0.85rem;
+  background: #f9f9f9;
   padding: 5px;
-  background-color: white;
   border-radius: 5px;
-  font-weight: 600;
-  box-shadow: 2px 2px 2px green;
+  font-weight: 900;
 }
 
 .car-info p:hover {
-  box-shadow: 3px 3px rgba(255, 0, 0, 0.5),
-    0px 0px 3px 4px rgba(0, 128, 0, 0.5);
+  box-shadow: 0px 4px 6px rgba(255, 0, 0, 0.3), 
+              0px 0px 6px 4px rgba(0, 128, 0, 0.3);
 }
 
 .morecars-div {
@@ -162,111 +125,14 @@ nav a:hover {
   border: none;
 }
 
-
-/*
 .morecars:hover {
   color: white;
   background-color: #009146;
 }
-*/
 
-
-.line-separator-car img {
-  width: 100%;
-  margin-top: 30px;
-  margin-bottom: 30px;
-}
-
-.seperator-right {
-  text-align: right;
-}
-
-.seperator-right img {
-  width: 70%;
-} 
-
-
-.seperator-left img {
-  width: 70%;
-}
-
-.footer-autostrada-uc {
-  width: 100% ;
-}
-
-.footer-autostrada-uc p {
-  color: white;
-  font-family: Lato;
-  text-align: center;
-}
-
-.footer-autostrada-uc .uc img {
-  width: 10%;
-}
-
-.footer-autostrada-uc .uc {
-  display: flex;
-  text-align: center;
-  justify-content: space-evenly;
-}
-
-
-[data-testid="map"] { 
-  border-radius: 10px;
-}
-
-/*Adress grävmaskinsvägen */
-.footer h2 {
-  margin-top: 20px;
-  font-size: 1.3rem;
-  text-align: center;
-  color: whitesmoke;
-  user-select: text;
-}
-
-.oppetider {
-  display: flex;
-  justify-content: space-around;
-  text-align: center;
-  margin-top: 5px;
-  align-items: center;
-}
-
-.oppetider p {
-  white-space: nowrap;
-  background-color: #009146;
-  color: white;
-  border-radius: 5px;
-  padding: 10px;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  font-weight: 500;
-}
-
-.trademark {
-  margin-top: 20px;
-  font-family: Lato;
-  font-size: 1em;
-  color: white;
-  text-align: center;
-}
-
-.nopage {
-  text-align: center;
-  color: white;
-}
-
-@media not all and (min-resolution:.001dpcm) {
-  @supports (-webkit-appearance:none) {
-    .video-video video {
-      width: 100%;
-    }
-  }
-}
-
-  /* Extra small devices (phones, 576px and down) */
+/* Media Queries */
+/* Extra small devices (phones, 576px and down) */
 @media (max-width: 575.98px) {
-  /* Din CSS för extra små skärmar XS */
   .nav {
     font-size: 0.55rem;
   }
@@ -287,21 +153,27 @@ nav a:hover {
     width: 15%;
   }
 
-  .oppetider {
-    flex-direction: column;
+  .car-item {
+    flex: 1 1 100%; /* Full bredd för små skärmar */
+    max-width: 100%;
   }
 
+  .car-info {
+    flex-direction: column; /* Gör attributen vertikala */
+    align-items: flex-start;
+  }
+
+  .car-info p {
+    flex: none; /* Låt varje attribut ta sin egen rad */
+    width: 100%;
+    text-align: left;
+  }
 }
 
-  /* Small devices (landscape phones, 576px and up) */
+/* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) and (max-width: 767.98px) {
-  /* Din CSS för små skärmar SM */
   .nav {
     font-size: 0.7rem;
-  }
-
-  .nav a {
-    margin-bottom: 15px;
   }
 
   .header a {
@@ -312,29 +184,16 @@ nav a:hover {
     width: 60%;
   }
 
-  .footer-autostrada-uc .uc img {
-    width: 15%;
-  } 
-
-  /* Lägg till margin-bottom här */
-  .header .row {
-    margin-bottom: 20px;
-  }
-
-  .oppetider {
-    flex-direction: column;
+  .car-item {
+    flex: 1 1 calc(50% - 20px); /* 2 kolumner för små skärmar */
+    max-width: calc(50% - 20px);
   }
 }
 
-  /* Medium devices (tablets, 768px and up) */
+/* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) and (max-width: 991.98px) {
-  /* Din CSS för medelstora skärmar MD */
   .nav {
     font-size: 0.75rem;
-  }
-
-  .nav a {
-    margin-bottom: 15px;
   }
 
   .header {
@@ -350,14 +209,14 @@ nav a:hover {
     width: 50%;
   }
 
-  .footer-autostrada-uc .uc img {
-    width: 10%;
+  .car-item {
+    flex: 1 1 calc(33.333% - 20px); /* 3 kolumner */
+    max-width: calc(33.333% - 20px);
   }
 }
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) and (max-width: 1199.98px) {
-  /* Din CSS för större skärmar än medelstora men mindre än extra stora LG */
   .nav {
     font-size: 0.51rem;
     justify-content: space-evenly;
@@ -366,19 +225,12 @@ nav a:hover {
   .header a {
     font-size: 1.5rem;
   }
-
-  /* Lägg till margin-bottom här */
-  .header .row {
-    margin-bottom: 20px;
-  }
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
-  /* Din CSS för extra stora skärmar XL */
   .nav {
     font-size: 0.65rem;
-    justify-content: space-evenly;
   }
 
   .header a {
@@ -386,9 +238,9 @@ nav a:hover {
   }
 }
 
-/* Extra large devices (large desktops, 1200px and up) */
+/* Very large screens */
 @media (min-width: 1400px) {
   .nav {
-    font-size: 0.80rem;
+    font-size: 0.8rem;
   }
 }

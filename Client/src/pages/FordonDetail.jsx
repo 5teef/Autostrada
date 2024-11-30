@@ -1,36 +1,55 @@
-import { useState, useEffect } from "react"
-import { useParams } from "react-router-dom"
+import { useState, useEffect } from "react";
+import { useParams } from "react-router-dom";
 
-export default function ItemDetails() {
-  const { slug } = useParams()
-  const [item, setItem] = useState()
+export default function FordonDetail() {
+  const { slug } = useParams();
+  const [car, setCar] = useState(null);
+  const [error, setError] = useState(null);
 
   useEffect(() => {
-    async function loadCars() {
+    if (!slug) {
+      setError("Registreringsnummer saknas.");
+      return;
+    }
+
+    async function fetchCarDetails() {
       try {
-        const response = await fetch("/api/cars");
+        const response = await fetch(`http://localhost:3001/api/cars/${slug}`);
+        if (!response.ok) {
+          throw new Error("Car not found");
+        }
         const data = await response.json();
-        const foundItem = data.find(car => car.slug === slug); // Använd find för att hitta objektet med matchande slug
-        setItem(foundItem);
-      } catch (error) {
-        console.error("Error fetching cars:", error);
+        setCar(data);
+      } catch (err) {
+        console.error("Error fetching car details:", err);
+        setError(err.message);
       }
     }
-    loadCars();
+
+    fetchCarDetails();
   }, [slug]);
 
-  useEffect(() => {
-    window.scrollTo(0, 0); // Scrolla till toppen när item uppdateras
-  }, [item]);
+  if (error) {
+    return <p className="error">{error}</p>;
+  }
 
-  if (!item) {
-    return null;
+  if (!car) {
+    return <p>Loading...</p>;
   }
 
   return (
-    <div className="item-container">
-      <div className="details-container">
-        <h1>{item.title}</h1>
+    <div className="car-details-container">
+      <h1>{car.marke} {car.modell}</h1>
+      <div className="car-detail-grid">
+        <img
+          src={car.bilder && car.bilder.length > 0 ? car.bilder[0] : '/placeholder.jpg'}
+          alt={car.marke}
+          className="car-image"
+        />
+        <div className="car-info">
+          <p><strong>Modellbeteckning:</strong> {car.modellbeteckning}</p>
+          <p><strong>Utrustning:</strong> {car.utr}</p>
+        </div>
       </div>
     </div>
   );

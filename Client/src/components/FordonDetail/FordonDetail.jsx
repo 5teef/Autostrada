@@ -16,7 +16,7 @@ export default function FordonDetail() {
 
     async function fetchCarDetails() {
       try {
-        const response = await fetch(`/api/cars/${slug}`);
+        const response = await fetch(`http://localhost:3001/api/cars/${slug}`);
         if (!response.ok) {
           throw new Error("Car not found");
         }
@@ -49,7 +49,7 @@ const sliderSettings = {
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
-    adaptiveHeight: true,
+    adaptiveHeight: false,
     arrows: false, // Disable navigation arrows
     lazyLoad: true,
   };

@@ -59,7 +59,7 @@ export default function ItemDetails() {
 
         <div className="details" >
           <div className="car-image-details">
-            <img src={"/Autostrada/cars/" + car.photo} alt={car.photo} ></img>
+            <img src={"/images/" + car.photo} alt={car.photo} ></img>
           </div>
           
           <div className="company-info">

@@ -25,7 +25,7 @@ import Contact from '../pages/Contact.jsx'*/
 export default function Router() {
 
   return (
-      <BrowserRouter>
+    <BrowserRouter>
       <header>
       <Header />
       </header>
@@ -34,11 +34,11 @@ export default function Router() {
         <Nav />
         <Routes>
 
-          <Route path="Autostrada/" element={<Home />} />
-          <Route path="Autostrada/fordon" element={<Fordon />} />
-          <Route path="Autostrada/fordon/:slug" element={<FordonDetail />} />
-          <Route path="Autostrada/salj" element={<Salj />} />
-          <Route path="Autostrada/KontaktaOss" element={<Kontakt />} />
+          <Route path="/" element={<Home />} />
+          <Route path="fordon" element={<Fordon />} />
+          <Route path="fordon/:slug" element={<FordonDetail />} />
+          <Route path="salj" element={<Salj />} />
+          <Route path="kontaktaoss" element={<Kontakt />} />
           <Route path="*" element={<NoPage />} />
           
         </Routes>

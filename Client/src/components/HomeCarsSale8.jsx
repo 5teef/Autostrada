@@ -41,8 +41,8 @@ export default function CarsEight() {
         <Row className="careight-container">
           {cars.map(car => (
             <Col key={car.slug} xs={12} sm={6} md={6} lg={4} xl={3} className="car-section">
-              <Link to={{ pathname: `/Autostrada/fordon/${car.slug}` }} style={{ textDecoration: 'none' }}>
-                <img src={"/Autostrada/cars/" + car.photo} alt={car.photo} className="car-image img-fluid" />
+              <Link to={{ pathname: `/fordon/${car.slug}` }} style={{ textDecoration: 'none' }}>
+                <img src={"/images/" + car.photo} alt={car.photo} className="car-image img-fluid" />
                 <div className="car">
                   <h2>{car.name}</h2>
                   {<div><p className="cartext">{car.description}</p></div>}
@@ -74,7 +74,7 @@ export default function CarsEight() {
       </Container>
 
       <div className="button-div">
-        <Link to="/Autostrada/fordon">
+        <Link to="/fordon">
           <Button className="button" variant="secondary" size="lg" style={{ textDecoration: 'none' }}>
             Fler bilar!
           </Button>

@@ -9,7 +9,7 @@ export default function CarsEight() {
   useEffect(() => {
     async function loadCars() {
       try {
-        const response = await fetch("http://localhost:3001/api/cars");
+        const response = await fetch("/api/cars");
         const data = await response.json();
         setCars(data.slice(0, 8));
       } catch (error) {

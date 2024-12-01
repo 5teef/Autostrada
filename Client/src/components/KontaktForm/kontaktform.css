@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
+
+* {
+  font-family: 'Lato', sans-serif;
+}
+
+.kontaktform-container {
+  margin: 50px auto;
+  width: 80%;
+  padding: 20px;
+  background-color: #f4f4f4;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 255, 42, 0.5); /* Grön skugga */
+}
+
+.kontaktform-container h2 {
+  font-weight: 700;
+  text-align: center;
+}
+
+.kontaktform-kolumner {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.kontaktform-kolumn {
+  flex: 1 1 45%; /* Flexibelt utrymme för kolumner */
+  display: flex;
+  flex-direction: column;
+}
+
+.kontaktform-kolumn label {
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+
+.kontaktform-kolumn input,
+.kontaktform-kolumn select,
+.kontaktform-kolumn textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-top: 5px;
+  box-sizing: border-box;
+}
+
+textarea {
+  resize: none; /* Förhindrar ändring av storlek */
+}
+
+.kontaktform-kolumn.full-width {
+  flex-basis: 100%; /* Använd hela bredden */
+}
+
+.kontaktform-submit-button {
+  width: 100%;
+  padding: 10px 0;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.kontaktform-submit-button:hover {
+  background-color: #1c5f30;
+}
+
+.kontaktform-control {
+  padding: 10px;
+  margin: 5px 0;
+}
+
+/* Responsiv design för mobila enheter */
+@media screen and (max-width: 600px) {
+  .kontaktform-container {
+    width: 90%;
+  }
+
+  .kontaktform-kolumner {
+    flex-direction: column;
+  }
+
+  .kontaktform-kolumn {
+    flex-basis: 100%;
+  }
+}

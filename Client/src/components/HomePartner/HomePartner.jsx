@@ -1,6 +1,7 @@
 import Left from "/img/left.png";
 import TwoVolvo from "/img/twovolvo.png";
 import { Container, Row, Col } from 'react-bootstrap';
+import "./homepartner.css"
 
 export default function HomeContainer() {
   return (

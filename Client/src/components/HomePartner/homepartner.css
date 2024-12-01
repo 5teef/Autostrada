@@ -1,0 +1,24 @@
+.homecontainer .homepartner {
+    color: white;
+}
+
+.lineseperator-home img {
+    width: 90%;
+}
+
+.morecars-div {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.morecars {
+    color: white;
+    font-family: Lato;
+    background-color: #009146;
+    border: none;
+}
+
+.morecars:hover {
+    color: white;
+    background-color: #009146;
+}

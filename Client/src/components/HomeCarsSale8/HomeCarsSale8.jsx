@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import Button from 'react-bootstrap/Button';
-import Left from "/img/left.png";
+//import Left from "/img/left.png";
 
 export default function CarsEight() {
   const [cars, setCars] = useState([]);

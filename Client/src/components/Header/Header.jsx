@@ -4,7 +4,7 @@ import { FaInstagram } from "react-icons/fa";
 import { MdMailOutline } from "react-icons/md";
 import { CiPhone } from "react-icons/ci";
 import { Container, Row, Col } from 'react-bootstrap';
-import "./css/header.css"
+import "./header.css"
 
 export default function Header() {
 
@@ -19,7 +19,7 @@ export default function Header() {
 
  // const day = new Date().getDay();
 
-  const oppetider = "Endast Tidsbokningar!!"
+  const oppetider = "Endast tidsbokningar!!"
 
   return (
     <div>

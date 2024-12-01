@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 
-export default function Fordon() {
+export default function CarsEight() {
   const [cars, setCars] = useState([]);
 
   useEffect(() => {
@@ -24,10 +24,10 @@ export default function Fordon() {
   const filteredCars = cars.filter(car => car.bilder && car.bilder.length > 0);
 
   return (
-    <div className="fordon-container">
+    <div className="careight-container">
       <div className="car-grid">
-        {filteredCars.map(car => (
-          <div key={car.regnr} className="car-item">
+        {filteredCars.map((car, index) => (
+          <div key={`${car.regnr}-${index}`} className="car-item">
             <Link to={`/fordon/${car.regnr}`} style={{ textDecoration: 'none' }}>
               <img
                 src={car.bilder[0]}
@@ -49,6 +49,7 @@ export default function Fordon() {
           </div>
         ))}
       </div>
+
     </div>
   );
 }

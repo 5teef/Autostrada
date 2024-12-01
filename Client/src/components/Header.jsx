@@ -17,7 +17,7 @@ export default function Header() {
   };
 
 
-  const day = new Date().getDay();
+ // const day = new Date().getDay();
 
   const oppetider = "Endast Tidsbokningar!!"
 

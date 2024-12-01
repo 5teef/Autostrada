@@ -5,8 +5,11 @@ export default function ScrollManager() {
   const { pathname } = useLocation();
 
   useEffect(() => {
-    // Scrolla till toppen när pathname ändras (navigering till en ny sida)
-    window.scrollTo(0, 0);
+    // Använd smooth scroll
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth", // Smooth scrolling
+    });
   }, [pathname]);
 
   return null;

@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route, Link } from 'react-router-dom'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
 import Home from '../pages/Home.jsx'
 import Header from './Header.jsx'
@@ -8,7 +8,7 @@ import Fordon from '../pages/Fordon.jsx'
 import Logo from "./LogoAutostrada.jsx"
 import NoPage from '../pages/NoPage.jsx'
 import FordonDetail from '../pages/FordonDetail.jsx'
-import ScrollManager from './ScrollManager.jsx'
+import ScrollManager from './ScrollManager/ScrollManager.jsx'
 /*import Login from '../pages/Login.jsx'
 import MyPage from '../pages/MyPage.jsx'
 import NewItem from '../pages/NewItem.jsx'
@@ -20,7 +20,7 @@ import Contact from '../pages/Contact.jsx'*/
 export default function Router() {
 
   return (
-      <BrowserRouter>
+    <BrowserRouter basename="/">
       <header>
       <Header />
       </header>
@@ -30,9 +30,9 @@ export default function Router() {
         <ScrollManager />
         <Routes>
 
-          <Route path="Autostrada/" element={<Home />} />
-          <Route path="Autostrada/fordon" element={<Fordon />} />
-          <Route path="Autostrada/fordon/:slug" element={<FordonDetail />} />
+          <Route path="/" element={<Home />} />
+          <Route path="/fordon" element={<Fordon />} />
+          <Route path="/fordon/:slug" element={<FordonDetail />} />
           <Route path="*" element={<NoPage />} />
           
         </Routes>

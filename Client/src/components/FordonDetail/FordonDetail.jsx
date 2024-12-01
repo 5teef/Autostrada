@@ -1,5 +1,7 @@
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
+import Slider from "react-slick";
+import "./fordondetail.css"
 
 export default function FordonDetail() {
   const { slug } = useParams();
@@ -14,7 +16,7 @@ export default function FordonDetail() {
 
     async function fetchCarDetails() {
       try {
-        const response = await fetch(`/api/cars/${slug}`);
+        const response = await fetch(`http://localhost:3001/api/cars/${slug}`);
         if (!response.ok) {
           throw new Error("Car not found");
         }
@@ -37,16 +39,41 @@ export default function FordonDetail() {
     return <p>Loading...</p>;
   }
 
+
+
+  // Slider settings
+// Slider settings
+const sliderSettings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    adaptiveHeight: true,
+    arrows: false, // Disable navigation arrows
+    lazyLoad: true,
+  };
+  
+  
+
   return (
     <div className="car-details-container">
       <h1>{car.marke} {car.modell}</h1>
       <div className="car-detail-grid">
-        <img
-          src={car.bilder && car.bilder.length > 0 ? car.bilder[0] : '/placeholder.jpg'}
-          alt={car.marke}
-          className="car-image"
-        />
-        <div className="car-info">
+        <Slider {...sliderSettings}>
+          {car.bilder && car.bilder.length > 0
+            ? car.bilder.map((image, index) => (
+                <div key={index}>
+                  <img src={image} alt={`${car.marke} bild ${index + 1}`} className="car-image" />
+                </div>
+              ))
+            : (
+              <div>
+                <img src="/placeholder.jpg" alt="Placeholder" className="car-image" />
+              </div>
+            )}
+        </Slider>
+        <div className="car-info-detail">
           <p><strong>Modellbeteckning:</strong> {car.modellbeteckning}</p>
           <p><strong>Utrustning:</strong> {car.utr}</p>
         </div>

@@ -2,7 +2,7 @@ import { Container, Row, Col } from 'react-bootstrap';
 import Autostrada from "../LogoAutostrada/LogoAutostrada";
 import UClogo from "/img/uc.png";
 import Bisnode from "/img/bisnode.png";
-import GoogleMapComponent from '../GoogleMaps/GoogleMaps.jsx';
+//import GoogleMapComponent from '../GoogleMaps/GoogleMaps.jsx';
 import "./footer.css"
 //<GoogleMapComponent />
 export default function Footer() {

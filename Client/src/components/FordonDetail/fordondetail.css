@@ -1,0 +1,151 @@
+@import "slick-carousel/slick/slick.css";
+@import "slick-carousel/slick/slick-theme.css";
+
+.slick-slider {
+  position: relative;
+  display: block;
+  margin: 0 auto;
+  box-sizing: border-box;
+  padding: 20px 0;
+}
+
+.slick-slide img {
+  display: block;
+  max-width: 100%;
+  max-height: 500px;
+  margin: 0 auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.slick-prev,
+.slick-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  color: white;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.slick-prev {
+  left: -50px;
+}
+
+.slick-next {
+  right: -50px;
+}
+
+.slick-prev:hover,
+.slick-next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.slick-dots {
+  bottom: 20px;
+  display: flex !important;
+  justify-content: center;
+}
+
+.slick-dots li {
+  margin: 0 5px;
+}
+
+.slick-dots li button {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #ccc;
+}
+
+.slick-dots li.slick-active button {
+  background: #333;
+}
+
+.car-details-container {
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.car-details-container h1 {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.car-info-detail {
+    text-align: left;
+    width: 100%;
+    background: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box; /* Ensure padding is included in width */
+    overflow: hidden; /* Prevent overflow from causing scroll */
+  }
+  
+  .car-info-detail p {
+    font-size: 1.1rem;
+    margin: 10px 0;
+    color: #555;
+    max-width: 100%; /* Ensure content does not exceed the container width */
+    word-wrap: break-word; /* Break long words if necessary */
+  }
+  
+
+@media (max-width: 768px) {
+  .slick-prev {
+    left: -35px;
+  }
+
+  .slick-next {
+    right: -35px;
+  }
+
+  .car-details-container {
+    padding: 15px;
+  }
+
+  .car-details-container h1 {
+    font-size: 1.5rem;
+  }
+
+  .car-info-detail p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .slick-prev {
+    left: -25px;
+  }
+
+  .slick-next {
+    right: -25px;
+  }
+
+  .car-details-container {
+    padding: 10px;
+  }
+
+  .car-details-container h1 {
+    font-size: 1.2rem;
+  }
+
+  .car-info-detail p {
+    font-size: 0.9rem;
+  }
+}

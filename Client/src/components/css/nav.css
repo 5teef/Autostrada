@@ -1,0 +1,68 @@
+nav {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  nav a {
+    font-family: Sawah;
+    color: rgba(255, 255, 255, 0.5);
+    letter-spacing: 3px;
+    display: inline-block;
+    white-space: nowrap;
+  }
+  
+  nav a:hover {
+    color: white;
+    transition: 1s;
+  }
+  
+  /* Media Queries for Navigation */
+  /* Extra small devices (phones, 576px and down) */
+  @media (max-width: 575.98px) {
+    .nav {
+      font-size: 0.55rem;
+    }
+  
+    .nav a {
+      margin-bottom: 15px;
+    }
+  }
+  
+  /* Small devices (landscape phones, 576px and up) */
+  @media (min-width: 576px) and (max-width: 767.98px) {
+    .nav {
+      font-size: 0.7rem;
+    }
+  }
+  
+  /* Medium devices (tablets, 768px and up) */
+  @media (min-width: 768px) and (max-width: 991.98px) {
+    .nav {
+      font-size: 0.75rem;
+    }
+  }
+  
+  /* Large devices (desktops, 992px and up) */
+  @media (min-width: 992px) {
+    .nav {
+      font-size: 0.51rem;
+      justify-content: space-evenly;
+    }
+  }
+  
+  /* Extra large devices (large desktops, 1200px and up) */
+  @media (min-width: 1200px) {
+    .nav {
+      font-size: 0.65rem;
+      justify-content: space-evenly;
+    }
+  }
+  
+  /* Very large screens */
+  @media (min-width: 1400px) {
+    .nav {
+      font-size: 0.8rem;
+    }
+  }
+  

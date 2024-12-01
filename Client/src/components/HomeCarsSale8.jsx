@@ -30,7 +30,7 @@ export default function CarsEight() {
       <div className="car-grid">
         {filteredCars.map((car, index) => (
           <div key={`${car.regnr}-${index}`} className="car-item">
-            <Link to={`/Autostrada/fordon/${car.regnr}`} style={{ textDecoration: 'none' }}>
+            <Link to={`/fordon/${car.regnr}`} style={{ textDecoration: 'none' }}>
               <img
                 src={car.bilder[0]}
                 alt={car.marke}
@@ -53,7 +53,7 @@ export default function CarsEight() {
       </div>
 
       <div className="morecars-div">
-        <Link to="/Autostrada/fordon">
+        <Link to="/fordon">
           <Button className="morecars" variant="secondary">Fler bilar!</Button>
         </Link>
       </div>

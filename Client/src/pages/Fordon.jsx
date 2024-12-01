@@ -28,7 +28,7 @@ export default function Fordon() {
       <div className="car-grid">
         {filteredCars.map(car => (
           <div key={car.regnr} className="car-item">
-            <Link to={`/Autostrada/fordon/${car.regnr}`} style={{ textDecoration: 'none' }}>
+            <Link to={`/fordon/${car.regnr}`} style={{ textDecoration: 'none' }}>
               <img
                 src={car.bilder[0]}
                 alt={car.marke}

@@ -20,19 +20,6 @@ body {
   font-family: Lato;
 }
 
-.header {
-  display: flex;
-  margin-top: 15px;
-  text-align: center;
-  font-family: Lato;
-}
-
-.header a {
-  color: white;
-  font-family: Lato;
-  white-space: nowrap;
-}
-
 .logo {
   text-align: center;
   width: 100%;
@@ -42,24 +29,11 @@ body {
   width: 35%;
 }
 
-nav {
-  margin-top: 20px;
-  margin-bottom: 20px;
-  text-align: center;
-}
-
-nav a {
-  font-family: Sawah;
-  color: rgba(255, 255, 255, .5);
-  letter-spacing: 3px;
-  display: inline-block;
-  white-space: nowrap;
-}
-
-nav a:hover {
+.homecontainer .homepartner {
   color: white;
-  transition: 1s;
 }
+
+
 
 .careight-container {
   padding: 20px;
@@ -130,29 +104,36 @@ nav a:hover {
   background-color: #009146;
 }
 
+
+.seperator-right {
+  text-align: right;
+}
+
+.seperator-right img {
+  width: 70%;
+} 
+
+
+.seperator-left {
+  text-align: right;
+}
+
+.seperator-left img {
+  width: 70%;
+} 
+
+.lineseperator-home img {
+  width: 90%;
+}
+
 /* Media Queries */
 /* Extra small devices (phones, 576px and down) */
 @media (max-width: 575.98px) {
-  .nav {
-    font-size: 0.55rem;
-  }
-
-  .nav a {
-    margin-bottom: 15px;
-  }
-
-  .header a {
-    font-size: 1.2rem;
-  }
-
   .logo img {
     width: 60%;
   }
 
-  .footer-autostrada-uc .uc img {
-    width: 15%;
-  }
-
+ 
   .car-item {
     flex: 1 1 100%; /* Full bredd för små skärmar */
     max-width: 100%;
@@ -172,14 +153,7 @@ nav a:hover {
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) and (max-width: 767.98px) {
-  .nav {
-    font-size: 0.7rem;
-  }
-
-  .header a {
-    font-size: 1.4rem;
-  }
-
+ 
   .logo img {
     width: 60%;
   }
@@ -192,19 +166,7 @@ nav a:hover {
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) and (max-width: 991.98px) {
-  .nav {
-    font-size: 0.75rem;
-  }
-
-  .header {
-    display: flex;
-    justify-content: space-evenly;
-  }
-
-  .header a {
-    font-size: 1.2rem;
-  }
-
+ 
   .logo img {
     width: 50%;
   }
@@ -217,30 +179,13 @@ nav a:hover {
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) and (max-width: 1199.98px) {
-  .nav {
-    font-size: 0.51rem;
-    justify-content: space-evenly;
-  }
+  
 
-  .header a {
-    font-size: 1.5rem;
-  }
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
   .nav {
     font-size: 0.65rem;
-  }
-
-  .header a {
-    font-size: 1.8rem;
-  }
-}
-
-/* Very large screens */
-@media (min-width: 1400px) {
-  .nav {
-    font-size: 0.8rem;
   }
 }

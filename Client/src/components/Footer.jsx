@@ -3,7 +3,7 @@ import Autostrada from "./LogoAutostrada";
 import UClogo from "../../public/img/uc.png";
 import Bisnode from "../../public/img/bisnode.png";
 import GoogleMapComponent from './GoogleMaps.jsx';
-
+import "./css/footer.css"
 
 export default function Footer() {
   return (
@@ -24,9 +24,7 @@ export default function Footer() {
 
         <h2 id='oppetider'>Öppetider</h2>
         <div className='oppetider'>
-          <div><p>Måndag-Fredag: 12:00 - 18:00</p></div>
-          <div><p>Lördag: 11:00 - 16:00</p></div>
-          <div><p>Söndag: Öppet vid bokning!</p></div>
+          <div><p>Måndag-Söndag: Endast Tidsbokningar!</p></div>
         </div>
       </Row>
 

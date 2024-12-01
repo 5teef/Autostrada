@@ -1,0 +1,127 @@
+.footer-autostrada-uc {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .footer-autostrada-uc p {
+    color: white;
+    font-family: Lato;
+    margin-bottom: 10px;
+  }
+  
+  .footer-autostrada-uc .uc {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px; /* Mellanrum mellan logotyper */
+    margin-top: 10px;
+  }
+  
+  .footer-autostrada-uc .uc img {
+    width: 50px; /* Standardstorlek för logotyper */
+    max-width: 100%;
+  }
+  
+  [data-testid="map"] { 
+    border-radius: 10px;
+    margin: 20px auto;
+  }
+  
+  .footer h2 {
+    margin-top: 20px;
+    font-size: 1.3rem;
+    text-align: center;
+    color: whitesmoke;
+    user-select: text;
+  }
+  
+  .oppetider {
+    display: flex;
+    flex-wrap: wrap; /* Gör rader vid små skärmar */
+    justify-content: center; /* Centrerar elementen */
+    gap: 10px;
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  .oppetider p {
+    white-space: nowrap;
+    background-color: #009146;
+    color: white;
+    border-radius: 5px;
+    padding: 10px 15px;
+    font-weight: 500;
+  }
+  
+  .trademark {
+    margin-top: 20px;
+    font-family: Lato;
+    font-size: 0.9rem;
+    color: white;
+    text-align: center;
+  }
+  
+  /* Responsiv design */
+  
+  /* Extra small devices (phones, 576px and down) */
+  @media (max-width: 575.98px) {
+    .footer-autostrada-uc .uc {
+      flex-direction: column; /* Stapla logotyperna vertikalt */
+      gap: 10px; /* Mellanrum mellan logotyper */
+    }
+  
+    .oppetider {
+      flex-direction: column; /* Stapla öppettiderna vertikalt */
+      align-items: center;
+    }
+  
+    .footer h2 {
+      font-size: 1.1rem; /* Minska storleken på rubriken */
+    }
+  
+    .footer-autostrada-uc .uc img {
+      width: 40px; /* Justera storleken på logotyperna */
+    }
+  }
+  
+  /* Small devices (landscape phones, 576px and up) */
+  @media (min-width: 576px) and (max-width: 767.98px) {
+    .footer-autostrada-uc .uc {
+      justify-content: space-evenly; /* Placera logotyperna jämnt */
+    }
+  
+    .oppetider {
+      flex-direction: row; /* Gör öppettiderna horisontella */
+      justify-content: center; /* Centrerar innehållet */
+    }
+  
+    .oppetider p {
+      padding: 8px 10px; /* Minska paddingen för små skärmar */
+    }
+  }
+  
+  /* Medium devices (tablets, 768px and up) */
+  @media (min-width: 768px) and (max-width: 991.98px) {
+    .footer h2 {
+      font-size: 1.2rem;
+    }
+  
+    .oppetider {
+      justify-content: center; /* Centrerar öppettiderna */
+      gap: 20px; /* Lägg till mellanrum mellan elementen */
+    }
+  }
+  
+  
+  /* Large devices (desktops, 992px and up) */
+  @media (min-width: 992px) {
+    .footer-autostrada-uc .uc img {
+      width: 60px; /* Öka logotypernas storlek */
+    }
+  
+    .oppetider p {
+      padding: 10px 20px; /* Öka paddingen */
+    }
+  }
+  

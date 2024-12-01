@@ -8,6 +8,7 @@ import Fordon from '../pages/Fordon.jsx'
 import Logo from "./LogoAutostrada.jsx"
 import NoPage from '../pages/NoPage.jsx'
 import FordonDetail from '../pages/FordonDetail.jsx'
+import ScrollManager from './ScrollManager.jsx'
 /*import Login from '../pages/Login.jsx'
 import MyPage from '../pages/MyPage.jsx'
 import NewItem from '../pages/NewItem.jsx'
@@ -26,6 +27,7 @@ export default function Router() {
       <main>
         <Logo />
         <Nav />
+        <ScrollManager />
         <Routes>
 
           <Route path="Autostrada/" element={<Home />} />

@@ -37,7 +37,7 @@ export default function App() {
             promise
               .then(() => { })
               .catch(() => {
-                // if promise fails, hide the video and fallback to <img> tag
+                // if promise fails, hide the video and fallback to <img> tagw
                 videoParentRef.current.style.display = "none";
                 setShouldUseImage(true);
               });

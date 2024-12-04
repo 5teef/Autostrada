@@ -9,24 +9,19 @@ import "./header.css"
 export default function Header() {
 
 
-  const handleScrollToOppetider = () => {
-    const oppetiderElement = document.getElementById('oppetider');
-    if (oppetiderElement) {
-      oppetiderElement.scrollIntoView({ behavior: 'smooth' });
-    }
-  };
+
 
 
  // const day = new Date().getDay();
 
-  const oppetider = "Endast tidsbokningar!!"
+  const oppetider = "Endast tidsbokningar!"
 
   return (
     <div>
       <Container fluid>
         <Row className="header  justify-content-sm-around justify-content-lg-around">
           <Col xs={12} sm={6} md="auto" lg="auto">
-            <Link to="#oppetider" onClick={handleScrollToOppetider} style={{ textDecoration: 'none' }}>  <FaRegClock /> {oppetider}</Link>
+            <span style={{ textDecoration: 'none' }}>  <FaRegClock /> {oppetider}</span>
           </Col>
           <Col xs={12} sm={6} md="auto" lg="auto">
             <Link to="https://www.instagram.com/autostrada.nu/" style={{ textDecoration: 'none' }}><FaInstagram /> autostrada.nu</Link>

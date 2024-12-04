@@ -7,6 +7,7 @@
   margin: 0 auto;
   box-sizing: border-box;
   padding: 20px 0;
+  overflow: hidden;
 }
 
 .slick-slide img {
@@ -37,12 +38,13 @@
 }
 
 .slick-prev {
-  left: -50px;
+  left: 10px; /* Flytta knappen inuti slidern */
 }
 
 .slick-next {
-  right: -50px;
+  right: 10px; /* Flytta knappen inuti slidern */
 }
+
 
 .slick-prev:hover,
 .slick-next:hover {
@@ -77,6 +79,7 @@
   background-color: #f9f9f9;
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 90%;
 }
 
 .car-details-container h1 {

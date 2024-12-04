@@ -5,7 +5,7 @@
     font-family: Lato;
   }
   
-  .header a {
+  .header a, .header span {
     color: white;
     font-family: Lato;
     white-space: nowrap;
@@ -23,7 +23,7 @@
   /* Media Queries for Header */
   /* Extra small devices (phones, 576px and down) */
   @media (max-width: 575.98px) {
-    .header a {
+    .header a, .header span { 
       font-size: 1.2rem;
     }
   
@@ -34,7 +34,7 @@
   
   /* Small devices (landscape phones, 576px and up) */
   @media (min-width: 576px) and (max-width: 767.98px) {
-    .header a {
+    .header a, .header span { 
       font-size: 1.4rem;
     }
   
@@ -45,7 +45,7 @@
   
   /* Medium devices (tablets, 768px and up) */
   @media (min-width: 768px) and (max-width: 991.98px) {
-    .header a {
+    .header a, .header span { 
       font-size: 1.2rem;
     }
   
@@ -56,14 +56,14 @@
   
   /* Large devices (desktops, 992px and up) */
   @media (min-width: 992px) {
-    .header a {
+    .header a, .header span { 
       font-size: 1.5rem;
     }
   }
   
   /* Extra large devices (large desktops, 1200px and up) */
   @media (min-width: 1200px) {
-    .header a {
+    .header a, .header span { 
       font-size: 1.8rem;
     }
   }

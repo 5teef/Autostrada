@@ -41,9 +41,11 @@ export default function FordonDetail() {
 
 
 
+
+
   // Slider settings
-// Slider settings
-const sliderSettings = {
+  // Slider settings
+  const sliderSettings = {
     dots: true,
     infinite: true,
     speed: 500,
@@ -51,22 +53,23 @@ const sliderSettings = {
     slidesToScroll: 1,
     adaptiveHeight: false,
     arrows: false, // Disable navigation arrows
-    lazyLoad: true,
+    lazyLoad: false,
+    accssibility: true,
   };
-  
-  
+
+
 
   return (
     <div className="car-details-container">
-      <h1>{car.marke} {car.modell}</h1>
+      <h1><strong>{car.marke} {car.modell} {car.modellbeteckning}</strong></h1>
       <div className="car-detail-grid">
         <Slider {...sliderSettings}>
           {car.bilder && car.bilder.length > 0
             ? car.bilder.map((image, index) => (
-                <div key={index}>
-                  <img src={image} alt={`${car.marke} bild ${index + 1}`} className="car-image" />
-                </div>
-              ))
+              <div key={index}>
+                <img src={image} alt={`${car.marke} bild ${index + 1}`} className="car-image" />
+              </div>
+            ))
             : (
               <div>
                 <img src="/placeholder.jpg" alt="Placeholder" className="car-image" />
@@ -74,7 +77,7 @@ const sliderSettings = {
             )}
         </Slider>
         <div className="car-info-detail">
-          <p><strong>Modellbeteckning:</strong> {car.modellbeteckning}</p>
+
           <p><strong>Utrustning:</strong> {car.utr}</p>
         </div>
       </div>

@@ -20,7 +20,7 @@ export default function Footer() {
             </div>
           </Col>
 
-          <h2>Grävmaskinsvägen 5 Eslöv 241 38</h2>
+          <h2>Grävmaskinsvägen 5, Eslöv 241 38</h2>
 
           <div className='oppetider'>
             <div><p>Endast Tidsbokningar!</p></div>

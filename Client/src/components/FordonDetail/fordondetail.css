@@ -107,6 +107,23 @@
     max-width: 100%; /* Ensure content does not exceed the container width */
     word-wrap: break-word; /* Break long words if necessary */
   }
+
+  .slider-container {
+    position: relative;
+  }
+  
+  .image-counter-overlay {
+    position: absolute;
+    bottom: 50px; /* Placera ovanför prickarna */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent bakgrund */
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 1rem;
+    z-index: 2; /* Se till att det visas över bilderna */
+  }
   
 
 @media (max-width: 768px) {
@@ -129,6 +146,11 @@
   .car-info-detail p {
     font-size: 1rem;
   }
+
+  .image-counter-overlay {
+    font-size: 0.9rem; /* Anpassa storlek för mindre skärmar */
+    bottom: 40px; /* Justera för att passa små skärmar */
+  }
 }
 
 @media (max-width: 480px) {
@@ -150,5 +172,10 @@
 
   .car-info-detail p {
     font-size: 0.9rem;
+  }
+
+  .image-counter-overlay {
+    font-size: 0.8rem;
+    bottom: 30px; /* Justera ytterligare för väldigt små skärmar */
   }
 }

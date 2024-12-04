@@ -1,12 +1,13 @@
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import Slider from "react-slick";
-import "./fordondetail.css"
+import "./fordondetail.css";
 
 export default function FordonDetail() {
   const { slug } = useParams();
   const [car, setCar] = useState(null);
   const [error, setError] = useState(null);
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
   useEffect(() => {
     if (!slug) {
@@ -16,7 +17,7 @@ export default function FordonDetail() {
 
     async function fetchCarDetails() {
       try {
-        const response = await fetch(`/api/cars/${slug}`);
+        const response = await fetch(`http://localhost:3001/api/cars/${slug}`);
         if (!response.ok) {
           throw new Error("Car not found");
         }
@@ -39,12 +40,6 @@ export default function FordonDetail() {
     return <p>Loading...</p>;
   }
 
-
-
-
-
-  // Slider settings
-  // Slider settings
   const sliderSettings = {
     dots: true,
     infinite: true,
@@ -52,35 +47,38 @@ export default function FordonDetail() {
     slidesToShow: 1,
     slidesToScroll: 1,
     adaptiveHeight: false,
-    arrows: false, // Disable navigation arrows
+    arrows: false,
     lazyLoad: false,
-    accssibility: true,
+    accessibility: true,
+    beforeChange: (oldIndex, newIndex) => setCurrentImageIndex(newIndex),
   };
 
-
+  const images = car.bilder?.length > 0 ? car.bilder : ["/placeholder.jpg"];
 
   return (
-    <div className="car-details-container">
-      <h1><strong>{car.marke} {car.modell} {car.modellbeteckning}</strong></h1>
-      <div className="car-detail-grid">
-        <Slider {...sliderSettings}>
-          {car.bilder && car.bilder.length > 0
-            ? car.bilder.map((image, index) => (
-              <div key={index}>
-                <img src={image} alt={`${car.marke} bild ${index + 1}`} className="car-image" />
-              </div>
-            ))
-            : (
-              <div>
-                <img src="/placeholder.jpg" alt="Placeholder" className="car-image" />
-              </div>
-            )}
-        </Slider>
-        <div className="car-info-detail">
-
-          <p><strong>Utrustning:</strong> {car.utr}</p>
+    <div className="car-detail-grid">
+  <div className="slider-container">
+    <p className="image-counter-overlay">
+      {currentImageIndex + 1}/{images.length}
+    </p>
+    <Slider {...sliderSettings}>
+      {images.map((image, index) => (
+        <div key={index}>
+          <img
+            src={image}
+            alt={`${car.marke} bild ${index + 1}`}
+            className="car-image"
+          />
         </div>
-      </div>
-    </div>
+      ))}
+    </Slider>
+  </div>
+  <div className="car-info-detail">
+    <p>
+      <strong>Utrustning:</strong> {car.utr}
+    </p>
+  </div>
+</div>
+
   );
 }

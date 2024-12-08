@@ -7,36 +7,44 @@
 /* Grundlayout för sidan */
 .car-detail-grid {
   display: flex;
-  flex-direction: column; /* Staplar allt vertikalt */
+  flex-direction: column;
+  /* Staplar allt vertikalt */
   gap: 20px;
-  margin: 20px auto; /* Centrerar layouten */
-  padding: 0 20px; /* Ge en marginal för mindre skärmar */
+  margin: 20px auto;
+  /* Centrerar layouten */
+  padding: 0 20px;
+  /* Ge en marginal för mindre skärmar */
 }
 
 /* Sektion för bild och specifikationer */
 .car-specification-section {
-  display: flex; /* Lägger bild och specifikationer bredvid varandra */
+  display: flex;
+  /* Lägger bild och specifikationer bredvid varandra */
   gap: 20px;
 }
 
 .slider-container {
-  width: 70%; /* Bilddelen */
+  width: 70%;
+  /* Bilddelen */
   position: relative;
 }
 
 .car-image {
   width: 100%;
   border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Skugga för stil */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  /* Skugga för stil */
   margin-top: 10px;
 }
 
 .image-counter-overlay {
   position: absolute;
-  bottom: 10%; /* Placera något över botten */
+  bottom: 10%;
+  /* Placera något över botten */
   left: 50%;
   transform: translateX(-50%);
-  background-color: rgba(0, 0, 0, 0.6); /* Halvtransparent bakgrund */
+  background-color: rgba(0, 0, 0, 0.6);
+  /* Halvtransparent bakgrund */
   color: white;
   padding: 5px 10px;
   border-radius: 5px;
@@ -46,46 +54,67 @@
 
 /* Specifikationerna bredvid bilden */
 .specifications-columns {
-  display: grid; /* Två kolumner för specifikationerna */
-  grid-template-columns: repeat(2, 1fr); /* Två lika breda kolumner */
-  gap: 15px 10px; /* Mindre mellanrum mellan rader och kolumner */
+  display: grid;
+  /* Två kolumner för specifikationerna */
+  grid-template-columns: repeat(2, 1fr);
+  /* Två lika breda kolumner */
+  gap: 15px 10px;
+  /* Mindre mellanrum mellan rader och kolumner */
   width: 40%;
   padding: 20px 15px;
-  border-radius: 12px; /* Rundare hörn för en mjukare känsla */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Lägg till subtil skugga */
-  color: #fff; /* Vit text för kontrast */
-  align-content: normal; /* Justera innehållet till toppen */
+  border-radius: 12px;
+  /* Rundare hörn för en mjukare känsla */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  /* Lägg till subtil skugga */
+  color: #fff;
+  /* Vit text för kontrast */
+  align-content: normal;
+  /* Justera innehållet till toppen */
 }
 
 .specifications-columns p {
-  margin: 0; /* Ta bort externa marginaler */
-  padding: 5px 0; /* Intern padding mellan text och box */
-  font-size: 1rem; /* Justera textstorlek för bättre läsbarhet */
-  line-height: 1.5; /* Förbättrad läsbarhet */
-  color: #f0f0f0; /* Ljusare vit för bättre kontrast */
+  margin: 0;
+  /* Ta bort externa marginaler */
+  padding: 5px 0;
+  /* Intern padding mellan text och box */
+  font-size: 1rem;
+  /* Justera textstorlek för bättre läsbarhet */
+  line-height: 1.5;
+  /* Förbättrad läsbarhet */
+  color: #f0f0f0;
+  /* Ljusare vit för bättre kontrast */
 }
 
 .specifications-columns p strong {
-  color: #28a745; /* Accentfärg för titlar */
-  font-weight: bold; /* Gör titlarna fetstilta */
+  color: #28a745;
+  /* Accentfärg för titlar */
+  font-weight: bold;
+  /* Gör titlarna fetstilta */
 }
 
 /* Sektion för resten av innehållet under bilden */
 .car-info-columns {
-  display: grid; /* Grid layout för att dela information i kolumner */
+  display: grid;
+  /* Grid layout för att dela information i kolumner */
   grid-template-columns: repeat(2, 1fr);
-  gap: 20px; /* Mellanrum mellan kolumner och rader */
-  
+  gap: 20px;
+  /* Mellanrum mellan kolumner och rader */
+
 }
 
 .car-info-columns h2 {
-  grid-column: span 2; /* Gör rubrikerna fullbredd */
-  font-size: 1.8rem; /* Öka storleken för rubriker */
-  color: #c0c0c0; /* Silverfärg */
+  grid-column: span 2;
+  /* Gör rubrikerna fullbredd */
+  font-size: 1.8rem;
+  /* Öka storleken för rubriker */
+  color: #c0c0c0;
+  /* Silverfärg */
   background: linear-gradient(to bottom, #e0e0e0, #c0c0c0, #a0a0a0);
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent; /* Gör texten genomskinlig för gradienten */
-  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.5); /* Subtil glans */
+  -webkit-text-fill-color: transparent;
+  /* Gör texten genomskinlig för gradienten */
+  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.5);
+  /* Subtil glans */
 
 }
 
@@ -93,7 +122,8 @@
 .car-info-columns ul {
   margin: 0;
   font-size: 1rem;
-  line-height: 1.6; /* Tydligare avstånd mellan rader */
+  line-height: 1.6;
+  /* Tydligare avstånd mellan rader */
   color: white;
   padding: 10px;
   list-style: none;
@@ -102,7 +132,8 @@
 /* För utrustningskolumner */
 .equipment-columns {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* Tre kolumner för utrustningen */
+  grid-template-columns: repeat(3, 1fr);
+  /* Tre kolumner för utrustningen */
   gap: 10px;
 }
 
@@ -119,26 +150,31 @@
 .slick-next {
   width: 40px;
   height: 40px;
-  background-color: #28a745; /* Grön färg */
+  background-color: #28a745;
+  /* Grön färg */
   border-radius: 50%;
   color: white;
   position: absolute;
-  top: 50%; /* Vertikal centrering */
+  top: 50%;
+  /* Vertikal centrering */
   transform: translateY(-50%);
   z-index: 5;
 }
 
 .slick-prev {
-  left: 10px; /* Placera till vänster inom bilden */
+  left: 10px;
+  /* Placera till vänster inom bilden */
 }
 
 .slick-next {
-  right: 10px; /* Placera till höger inom bilden */
+  right: 10px;
+  /* Placera till höger inom bilden */
 }
 
 .slick-prev:hover,
 .slick-next:hover {
-  background-color: #218838; /* Mörkare grön vid hover */
+  background-color: #218838;
+  /* Mörkare grön vid hover */
 }
 
 /* Rubriker i slider */
@@ -148,11 +184,14 @@
   font-weight: bold;
   text-transform: uppercase;
   letter-spacing: 1px;
-  color: #c0c0c0; /* Silverfärg */
+  color: #c0c0c0;
+  /* Silverfärg */
   background: linear-gradient(to bottom, #e0e0e0, #c0c0c0, #a0a0a0);
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent; /* Gör texten genomskinlig för gradienten */
-  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.5); /* Subtil glans */
+  -webkit-text-fill-color: transparent;
+  /* Gör texten genomskinlig för gradienten */
+  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.5);
+  /* Subtil glans */
 }
 
 
@@ -160,45 +199,55 @@
 /* Responsivitet */
 @media (max-width: 768px) {
   .car-detail-grid {
-    flex-direction: column; /* Stapla sektionerna vertikalt */
+    flex-direction: column;
+    /* Stapla sektionerna vertikalt */
     gap: 20px;
     padding: 10px;
   }
 
   .car-specification-section {
-    flex-direction: column; /* Placera bild och specifikationer vertikalt */
+    flex-direction: column;
+    /* Placera bild och specifikationer vertikalt */
   }
 
   .slider-container,
   .specifications-columns {
-    width: 100%; /* Gör sektionerna fullbredd */
+    width: 100%;
+    /* Gör sektionerna fullbredd */
   }
 
   .car-info-columns {
-    grid-template-columns: 1fr; /* En kolumn för mindre skärmar */
+    grid-template-columns: 1fr;
+    /* En kolumn för mindre skärmar */
   }
 
   .equipment-columns {
-    grid-template-columns: repeat(2, 1fr); /* Två kolumner för utrustning */
+    grid-template-columns: repeat(2, 1fr);
+    /* Två kolumner för utrustning */
   }
 
   .slick-prev,
   .slick-next {
-    width: 35px; /* Minska storleken på pilarna */
+    width: 35px;
+    /* Minska storleken på pilarna */
     height: 35px;
-    top: 45%; /* Justera vertikal position */
+    top: 45%;
+    /* Justera vertikal position */
   }
 
   .slick-prev {
-    left: 5px; /* Placera närmare kanten */
+    left: 5px;
+    /* Placera närmare kanten */
   }
 
   .slick-next {
-    right: 5px; /* Placera närmare kanten */
+    right: 5px;
+    /* Placera närmare kanten */
   }
 
   .car-image {
-    border-radius: 5px; /* Mindre rundning för bilder */
+    border-radius: 5px;
+    /* Mindre rundning för bilder */
   }
 
   .image-counter-overlay {
@@ -207,10 +256,16 @@
   }
 
   .car-info-detail h2 {
-    font-size: 1.4rem; /* Minska rubrikstorlek */
+    font-size: 1.4rem;
+    /* Minska rubrikstorlek */
   }
 
   .car-info-detail p {
-    font-size: 0.9rem; /* Minska textstorlek */
+    font-size: 0.9rem;
+    /* Minska textstorlek */
+  }
+
+  .slider-container h1 {
+    font-size: 20pt;
   }
 }

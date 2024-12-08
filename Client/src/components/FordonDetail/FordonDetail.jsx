@@ -85,7 +85,7 @@ export default function FordonDetail() {
     <div className="car-detail-grid">
       <div className="car-specification-section">
         <div className="slider-container">
-          <h1>{`${car.marke} ${car.modellbeteckning}`}</h1>
+          <h1>{`${car.marke} ${car.modell}  ${car.modellbeteckning}`}</h1>
           <SeperatorLeft />
           <p className="image-counter-overlay">
             {currentImageIndex + 1}/{images.length}

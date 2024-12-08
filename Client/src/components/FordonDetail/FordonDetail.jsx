@@ -9,22 +9,6 @@ export default function FordonDetail() {
   const [car, setCar] = useState(null);
   const [error, setError] = useState(null);
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
-  const [isModalOpen, setIsModalOpen] = useState(false);
-  const [modalImage, setModalImage] = useState(null);
-  const [isMobile, setIsMobile] = useState(false); // State to track if it's a mobile screen
-
-  useEffect(() => {
-    const handleResize = () => {
-      setIsMobile(window.innerWidth <= 768); // Check if screen width is less than or equal to 768px
-    };
-
-    handleResize(); // Initial check
-    window.addEventListener("resize", handleResize); // Update on resize
-
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
-  }, []);
 
   useEffect(() => {
     if (!slug) {
@@ -94,18 +78,6 @@ export default function FordonDetail() {
 
   const parsedUtr = parseUtr(car.utr);
 
-  const handleImageClick = (image) => {
-    if (isMobile) { // Open modal only for mobile screens
-      setModalImage(image);
-      setIsModalOpen(true);
-    }
-  };
-
-  const closeModal = () => {
-    setModalImage(null);
-    setIsModalOpen(false);
-  };
-
   return (
     <div className="car-detail-grid">
       <div className="car-specification-section">
@@ -117,7 +89,7 @@ export default function FordonDetail() {
           </p>
           <Slider {...sliderSettings}>
             {images.map((image, index) => (
-              <div key={index} onClick={() => handleImageClick(image)}>
+              <div key={index}>
                 <img
                   src={image}
                   alt={`${car.marke} bild ${index + 1}`}
@@ -128,14 +100,6 @@ export default function FordonDetail() {
           </Slider>
         </div>
       </div>
-
-      {isModalOpen && (
-        <div className="modal" onClick={closeModal}>
-          <div className="modal-content">
-            <img src={modalImage} alt="Fullscreen" className="fullscreen-image" />
-          </div>
-        </div>
-      )}
 
       <div className="car-info-columns">
         <h2>
@@ -169,7 +133,7 @@ export default function FordonDetail() {
             ))}
           </div>
         ) : (
-          <p>Ingen komprimerad utrustning tillgänglig</p>
+          <p>Ingen utrustning tillgänglig</p>
         )}
       </div>
     </div>

@@ -38,7 +38,6 @@ export default function CarsEight() {
               />
               <div className="car">
                 <h2>{car.marke} {car.modell}</h2>
-                <p className="cartext">{car.modellbeteckning}</p>
               </div>
             </Link>
             <div className="car-info">

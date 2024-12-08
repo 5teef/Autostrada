@@ -51,11 +51,14 @@ body {
   flex: 1 1 calc(33.333% - 20px);
   /* 3 kolumner på större skärmar */
   max-width: calc(33.333% - 20px);
-  border: 1px solid #ddd;
   border-radius: 10px;
   padding: 10px;
   text-align: center;
-  background-color: rgb(255, 255, 255);
+
+}
+
+.car-item h2{
+  color: white;
 }
 
 .car-image {
@@ -84,6 +87,10 @@ body {
   padding: 5px;
   border-radius: 5px;
   font-weight: 900;
+}
+
+.cartext {
+  color: white;
 }
 
 .car-info p:hover {

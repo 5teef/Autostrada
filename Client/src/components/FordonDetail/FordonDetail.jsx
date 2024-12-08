@@ -34,7 +34,7 @@ export default function FordonDetail() {
 
     async function fetchCarDetails() {
       try {
-        const response = await fetch(`http://localhost:3001/api/cars/${slug}`);
+        const response = await fetch(`/api/cars/${slug}`);
         if (!response.ok) {
           throw new Error("Car not found");
         }

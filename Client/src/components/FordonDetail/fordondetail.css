@@ -155,6 +155,37 @@
   text-shadow: 0 1px 1px rgba(255, 255, 255, 0.5); /* Subtil glans */
 }
 
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  max-width: 90%;
+  max-height: 90%;
+}
+
+.fullscreen-image {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+.modal:hover {
+  cursor: pointer;
+}
+
+
 /* Responsivitet */
 @media (max-width: 768px) {
   .car-detail-grid {

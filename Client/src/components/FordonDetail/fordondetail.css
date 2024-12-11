@@ -52,7 +52,7 @@
 }
 
 .specification-column p {
-  font-size: clamp(1.5rem, 1.5vw, 5rem);
+  font-size: clamp(1.4rem, 1.5vw, 5rem);
   font-weight: bold;
   color: #c0c0c0;
   background: linear-gradient(to bottom, #e0e0e0, #c0c0c0, #a0a0a0);
@@ -72,7 +72,7 @@
 }
 
 .car-info-columns h2 {
-  font-size: clamp(2rem, 3vw, 5rem);
+  font-size: clamp(rem, 3vw, 5rem);
   margin-bottom: 1.5vw;
   color: #c0c0c0;
   background: linear-gradient(to bottom, #e0e0e0, #c0c0c0, #a0a0a0);
@@ -83,7 +83,7 @@
 }
 
 .car-info-columns p {
-  font-size: clamp(1.5rem, 2vw, 2rem);
+  font-size: clamp(1.3rem, 1.5vw, 2rem);
   line-height: 1.5;
   color: #c0c0c0;
   background: linear-gradient(to bottom, #e0e0e0, #c0c0c0, #a0a0a0);
@@ -101,7 +101,7 @@
 }
 
 .car-info-columns ul li {
-  font-size: clamp(1.5rem, 2vw, 2rem);
+  font-size: clamp(1.3rem, 1.5vw, 2rem);
   margin-bottom: 0.5vw;
   color: #c0c0c0;
   background: linear-gradient(to bottom, #e0e0e0, #c0c0c0, #a0a0a0);

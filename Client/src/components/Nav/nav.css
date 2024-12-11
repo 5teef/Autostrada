@@ -1,68 +1,112 @@
-nav {
-    margin-top: 20px;
-    margin-bottom: 20px;
-    text-align: center;
+/* Grundläggande stil för nav */
+.custom-nav {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+  background-color: transparent; /* Ändra vid behov */
+}
+
+.nav-list {
+  list-style: none; /* Ta bort standard liststil */
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center; /* Centrera länkar horisontellt */
+  gap: 15px; /* Mellanrum mellan länkar */
+}
+
+.nav-list li {
+  display: inline-block;
+}
+
+.nav-list a {
+  font-family: Sawah, sans-serif;
+  color: rgba(255, 255, 255, 0.7); /* Mjukare vit nyans */
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 0.9rem;
+  letter-spacing: 2px; /* Mellanrum mellan bokstäver */
+  padding: 8px 15px; /* Gör länkarna större för pekskärmar */
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.nav-list a:hover {
+  color: white; /* Vit färg vid hover */
+  transform: scale(1.1); /* Förstoring vid hover */
+}
+
+/* Responsiv styling */
+
+/* Extra små skärmar (max 575px) */
+@media (max-width: 575px) {
+  .nav-list {
+    flex-direction: column; /* Vertikal layout */
+    gap: 10px; /* Mindre mellanrum mellan länkar */
   }
-  
-  nav a {
-    font-family: Sawah;
-    color: rgba(255, 255, 255, 0.5);
-    letter-spacing: 3px;
-    display: inline-block;
-    white-space: nowrap;
+
+  .nav-list a {
+    font-size: 0.75rem; /* Mindre textstorlek */
+    letter-spacing: 1.5px; /* Minskad mellanrum mellan bokstäver */
+    padding: 10px; /* Större klickyta för pekskärmar */
   }
-  
-  nav a:hover {
-    color: white;
-    transition: 1s;
+}
+
+/* Små skärmar (576px och uppåt) */
+@media (min-width: 576px) and (max-width: 767px) {
+  .nav-list {
+    flex-direction: row; /* Återgå till horisontell layout */
   }
-  
-  /* Media Queries for Navigation */
-  /* Extra small devices (phones, 576px and down) */
-  @media (max-width: 575.98px) {
-    .nav {
-      font-size: 0.55rem;
-    }
-  
-    .nav a {
-      margin-bottom: 15px;
-    }
+
+  .nav-list a {
+    font-size: 0.75rem;
+    letter-spacing: 1.8px; /* Små justeringar */
   }
-  
-  /* Small devices (landscape phones, 576px and up) */
-  @media (min-width: 576px) and (max-width: 767.98px) {
-    .nav {
-      font-size: 0.7rem;
-    }
+}
+
+/* Mellanstora skärmar (768px och uppåt) */
+@media (min-width: 768px) and (max-width: 991px) {
+  .nav-list {
+    gap: 20px; /* Ökat mellanrum mellan länkar */
   }
-  
-  /* Medium devices (tablets, 768px and up) */
-  @media (min-width: 768px) and (max-width: 991.98px) {
-    .nav {
-      font-size: 0.75rem;
-    }
+
+  .nav-list a {
+    font-size: 0.75rem;
+    letter-spacing: 2px; /* Justerad mellanrum */
   }
-  
-  /* Large devices (desktops, 992px and up) */
-  @media (min-width: 992px) {
-    .nav {
-      font-size: 0.51rem;
-      justify-content: space-evenly;
-    }
+}
+
+/* Stora skärmar (992px och uppåt) */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .nav-list {
+    gap: 25px; /* Förstärkt mellanrum för tydlighet */
   }
-  
-  /* Extra large devices (large desktops, 1200px and up) */
-  @media (min-width: 1200px) {
-    .nav {
-      font-size: 0.65rem;
-      justify-content: space-evenly;
-    }
+
+  .nav-list a {
+    font-size: 0.75rem; /* Ökad textstorlek */
+    letter-spacing: 2.5px; /* Justerad mellanrum mellan bokstäver */
   }
-  
-  /* Very large screens */
-  @media (min-width: 1400px) {
-    .nav {
-      font-size: 0.8rem;
-    }
+}
+
+/* Extra stora enheter (stora skärmar, min 1200px) */
+@media (min-width: 1200px) and (max-width: 1399px) {
+  .nav-list {
+    gap: 30px; /* Mellanrum mellan länkar */
   }
-  
+
+  .nav-list a {
+    font-size: 1rem; /* Ännu större text */
+    letter-spacing: 3px; /* Ökad mellanrum för tydlighet */
+  }
+}
+
+/* Extra stora skärmar (min 1400px) */
+@media (min-width: 1400px) {
+  .nav-list {
+    gap: 35px; /* Maximalt mellanrum mellan länkar */
+  }
+
+  .nav-list a {
+    font-size: 1.2rem; /* Stor text för stora skärmar */
+    letter-spacing: 3.5px; /* Maximalt mellanrum mellan bokstäver */
+  }
+}
